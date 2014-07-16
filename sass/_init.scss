@@ -108,6 +108,7 @@ $yellow: #faa61a;
 $gray: rgb(119,119,119); // #777777; ==> main font color
 $darkgray: #333333;
 $sidebargray: #fbfbfb;
+$bordergray: #cccccc;
 
 //
 // Fontsizes
@@ -143,6 +144,8 @@ $L: 60em; // 960px wide with 16px body font
 @import "compass/typography/vertical_rhythm";
 // Add the Zen Grids responsive layout mixins.
 // @import "zen"; // we would like to use susy, instead ;) (criscom)
+
+@import "variables";
 
 // Add susy;
 // @import "susy";

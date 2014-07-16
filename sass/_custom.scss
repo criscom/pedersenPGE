@@ -25,19 +25,11 @@ body,
 
 .lotusui30 {
 	a, a:visited {
-	color: $blue;
-	font-weight: 700;
-	text-decoration: underline;
-	}
-	a:hover {
-		text-decoration: none;
+		@extend %textlink;
 	}
 }
 
-
-
-
-//===========================================================
+// ===========================================================
 // Pedersen Logo section
 
 
@@ -137,6 +129,7 @@ body,
 	font-size: 14px;
 	font-size: .875rem;
 	font-family: $roboto !important;
+	text-decoration: none !important;
 }
 
 .lotusui30 .lotusBanner ul.lotusLinks li a:hover, 
@@ -148,7 +141,7 @@ body,
 
 .lotusui30 div.lotusBanner ul.lotusUtility li a {
 	color: white !important;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 // Username next to share button
@@ -160,39 +153,16 @@ body,
 
 // BUTTON stylings
 
-.lotusui30 .lotusBanner ul.lotusInlinelist li a.lotusBannerBtn, // Share button
-.lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton, .lotusBtnImg // Apps buttons
+.lotusui30 .lotusBanner ul.lotusInlinelist li a.lotusBannerBtn // Share button
 {
-	font-family: $roboto;
-	color: #ffffff;
-	font-weight: 400 !important;
-	font-size: 14px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); // #fbb450, #f89406
-  background-color: #faa732;
-  background-image: -moz-linear-gradient(top, #ffcb62, #ff9900); // #fbb450, #f89406
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffcb62), to(#ff9900));
-  background-image: -webkit-linear-gradient(top, #ffcb62, #ff9900);
-  background-image: -o-linear-gradient(top, #ffcb62, #ff9900);
-  background-image: linear-gradient(to bottom, #ffcb62, #ff9900) !important;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#ffff9900', GradientType=0);
-  border-color: #ff9900 #ff9900 #ad6704;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #ff9900; //#f89406
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  &:hover, &:focus {
-  	color: #ffffff;
-  	background-color: #ff9900 !important; // #f89406
-  	*background-color: #df8505 !important;
-  }
+	@extend %button;
 }
 
 // dropdown menu
 
 .lotusui30 .lotusNavMenu {
     // border: 3px solid rgba(23, 23, 23, 0.8);
-    border: 1px solid rgb(170,170,170) !important; // rgba(23, 23, 23, 0.8); //lighten($gray, 30%)
+    border: 1px solid rgb(170,170,170) !important; // rgb(170,170,170) = #aaaaaaa; // rgba(23, 23, 23, 0.8); //lighten($gray, 30%)
     // border-radius: 3px;
     border-radius: 0px;
     // box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
@@ -247,28 +217,7 @@ body,
 // Sidebar map
 
 .lotusui30_layout .lotusColLeft {
-	background-image: url('img/retina/worldmap-slogan-retina.png') !important;
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 176px 118px;
-	padding-top: 138px;
-	margin-top: 36px;
-}
 
-// Sidebar background
-
-.lotusui30_layout .lotusMain .lotusContent:before {
-	  // background: none repeat scroll 0 0 #f0f0f0;
-	  background: none repeat scroll 0 0 $sidebargray !important; // $sidebargray
-    content: "";
-    height: 100%;
-    // left: 215px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    // width: 770px;
-    width: 216px;
-    z-index: -1;
 }
 
 .lotusui30 .lotusMenu .lotusMenuHeader::before, // activities, aktivitäten
@@ -283,10 +232,27 @@ body,
   margin-left: 20px;
   // background: #2b2d30;
   background: $sidebargray;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid $bordergray;
   // border-bottom: 1px solid #434b4d;
 }
 
+// Sidebar background
+.xsp .lotusMain .lotusContent:before,
+.lotusui30_layout .lotusMain .lotusContent:before {
+	  // background: none repeat scroll 0 0 #f0f0f0;
+	  background: none repeat scroll 0 0 $sidebargray !important; // $sidebargray
+    content: "";
+    height: 100%;
+    // left: 215px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    // width: 770px;
+    width: 216px;
+    z-index: -1;
+}
+
+.xsp .lotusColLeft:after,
 .lotusui30_layout .lotusColLeft:after {
     // background: none repeat scroll 0 0 #282a2d;
     background: none repeat scroll 0 0 $sidebargray;
@@ -399,9 +365,14 @@ background-position: -336px 0; // -368px 0;
 background-position: -384px 0; //-416px 0;
 }
 
-// activities, aktivitäten ==> tags
+//===========================================================
+// Tags
 
-.lotusui30 .lotusSection .lconnTagCloudContent {
+// activities, aktivitäten ==> tags
+.lotusui30 .lotusSection .lconnTagCloudContent,
+// my profile
+.myProfile .lotusChunk #socialTagsSubArea
+ {
 	margin-top: 8px;
 	background: lighten($gray, 40%);
 	border-top: darken($sidebargray, 10%);
@@ -411,7 +382,8 @@ background-position: -384px 0; //-416px 0;
 
 
 // TAGS heading
-.lotusui30 .lotusColLeft .lotusSection h2 {
+.lotusui30 .lotusColLeft .lotusSection h2,
+.myProfile .lotusChunk h2 span  {
 	padding-top: 10px;
 	border-bottom: 0;
 	border-top: 1px solid #cccccc;
@@ -428,23 +400,18 @@ background-position: -384px 0; //-416px 0;
 // Widgets
 
 
-.lotusui30 .lotusSection2 .lotusHeading a, .lotusui30 .lotusSection h2 a, .lotusui30 .lotusWidget h2 a, .lotusui30 .lotusWidget2 h2 a {
-	color: $blue !important;
-	text-decoration: none;
-	font-family: $roboto !important;
-	font-weight: 400;
-	letter-spacing: 0.05em;
-	font-size: 20px;
-	font-size: 1.25rem;
+.lotusui30 .lotusSection2 .lotusHeading a, .lotusui30 .lotusSection h2 a, .lotusui30 .lotusWidget h2 a, .lotusui30 .lotusWidget2 h2 a
+{
+	@extend %heading;
 	&:hover {
 		text-decoration: underline;
 	}
 }
 
 .lotusui30 .lotusSection h2, .lotusui30 .lotusWidget h2, .lotusui30 .lotusWidget2 h2, .lotusui30 .dijitTitlePaneTitle,
-.lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1  {
-	border-bottom: 3px solid $yellow;
-	color: $blue !important;
+.lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1
+  {
+  	@extend %headingborder;
 }
 
 // other pages headers
@@ -653,7 +620,228 @@ background-position: -384px 0; //-416px 0;
 
 .lotusPlaceBar h2 {
 	color: $blue !important;
+	font-weight: 100 !important;
+	font-size: 28px;
+	font-style: 1.75rem;
 }
+
+//===========================================================
+// APPS
+
+body.xsp {
+	background-color: white;
+}
+
+
+.lotusPlaceBar {
+	background: white !important;
+}
+
+.lotusPlaceBar h2 {
+	@extend %heading;
+}
+
+
+
+
+// Heading Content
+
+.lotusui .lotusForm .lotusContent h2 {
+	@extend %heading;
+	@extend %headingborder;
+	padding-bottom: 12px;
+	padding-bottom: .75rem;
+	margin-bottom: 8px;
+	margin-bottom: .5rem;
+}
+
+// Buttons
+
+.lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton // Apps buttons
+{
+	@extend %button;
+}
+
+.lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton // Apps buttons
+{
+	@include border-radius(6px);
+}
+
+
+.lotusui .lotusForm .lotusContent table {
+	margin-bottom: 12px;
+	margin-bottom: .75rem;
+	td input, td select {
+		margin-top: 6px;
+		margin-top: .375rem;
+	}
+}
+
+.lotusui table td>a {
+	color: $blue !important;
+	text-decoration: underline !important;
+	font-weight: 400 !important;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+// Below buttons
+
+body.xsp div,
+table div,
+.xspTextLabel {
+	color: $gray !important;
+}
+
+.xsp .lotusInlinelist a {
+	@extend %textlink;
+}
+
+// Content
+.xsp .lotusForm {
+	background: none !important;
+}
+.xsp .lotusContent {
+	border: 0;
+	box-shadow: none;
+	background-color: white;
+}
+
+// Sidebar Apps
+
+.xsp .lotusColLeft {
+	// background-color: $sidebargray !important;
+	// box-shadow: -1px 0 0 darken($sidebargray, 10%) inset, 2px 0 3px 0 darken($sidebargray, 5%); 
+
+	.lotusMenu, .portlet-menu {
+		@extend %map;
+	}
+}
+
+.lotusMenu h3, 
+.portlet-menu h3,
+.lotusMenu ul li a, 
+.portlet-menu ul li a  {
+	font-family: $roboto !important;
+}
+
+// Executives
+.lotusMenuHeader>ul>li>h3>a {
+	color: $yellow !important;
+}
+
+// Subsections
+.lotusMenu ul li>a, 
+.portlet-menu ul li>a
+  {
+	color: $gray !important;
+}
+
+.lotusMenuSubsection ul li>h3>a {
+	color: $darkgray !important;
+}
+
+.lotusMenu li.lotusSelected a, 
+.portlet-menu li.lotusSelected a, 
+.lotusMenu h3.lotusSelected, 
+.portlet-menu h3.lotusSelected {
+// code from tags 370 - 376
+	background: lighten($gray, 40%);
+	border-top: darken($sidebargray, 10%);
+	border-bottom: darken($sidebargray, 10%);
+	color: $gray !important; 
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Executive table
+///
+
+table.xspDataTable {
+
+	margin-top: 16px !important;
+	margin-top: 1rem !important;
+	margin-bottom: 12px !important;
+	margin-bottom: .75rem !important;
+
+
+}
+
+// Filter on top of table
+
+table.xspDataTable>thead>tr {
+// border-radius doesn't work on tr
+	height: 28px;
+	border-color: $bordergray !important;
+	border-top: 1px solid $bordergray;
+	border-right: 1px solid $bordergray;
+	border-left: 1px solid $bordergray;
+	@include background-image(linear-gradient(#fefefe, #f3f3f3));
+	th div span {
+		color: $darkgray;
+	}
+}
+
+
+// table rows border color
+
+.xspDataTable {
+		tbody tr td {
+		border-color: $bordergray !important;
+		height: 36px !important;
+		height: 2.25rem !important;
+		vertical-align: middle;
+		span {
+			color: $gray !important;		
+		}
+		a {
+			@extend %textlink;
+		}
+	}
+}
+
+
+input.xspInputFieldEditBox {
+	height: 24px;
+	height: 1.5rem;
+}
+// Find Clear
+
+table button {
+	// @extend %button;
+	margin-left: 8px;
+	margin-left: .75rem;
+	box-shadow: none !important;
+	// @include border-radius(6px);
+}
+
+
+
+
+// Pager
+.xspDataTableViewPanelHeaderStart,
+.xspDataTableViewPanelHeaderMiddle,
+.xspDataTableViewPanelHeaderEnd
+{
+	border-color: $bordergray !important;
+	@include background-image(linear-gradient(#fefefe, #f3f3f3));
+}
+
+.xspPagerContainer a {
+	@extend %textlink;
+}
+
+// Pager table
+table.xspDataTableViewPanel {
+	tr>td.xspDataTableViewPanelHeaderMiddle>table,
+	tr>td.xspDataTableViewPanelFooterMiddle>table {
+		margin-top: 0px;
+		margin-bottom: 4px !important;
+		margin-bottom: .25rem !important;
+	}
+}
+
 
 //===========================================================
 // footer
