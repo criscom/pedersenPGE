@@ -36,6 +36,9 @@ body,
 .pedersenBanner {
 	height: 70px;
 	background: white !important;
+	> .lotusRightCorner {
+		background: white !important;
+	}
 	.lotusInner {
 		max-width: 1560px;
 		min-width: 950px;
@@ -84,7 +87,7 @@ body,
 	background: $yellow;
 	border-bottom: 3px solid $yellow !important;
 	// height: 50px;
-	.lotusRightCorner {
+	>.lotusRightCorner {
 		border-bottom: 1px solid $yellow !important;
 		background: $blue !important;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003465', endColorstr='#003465', GradientType=0) !important; // For IE9
@@ -172,7 +175,7 @@ body,
 .lotusui30 .lotusNavMenu tr a {
 	font-family: $roboto !important;
 	font-weight: 400;
-	text-decoration: none;
+	text-decoration: none !important;
 	color: $darkgray;
 }
 
@@ -203,6 +206,10 @@ body,
 
 .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:visited, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:hover, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:focus, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:active {
 	color: $blue !important;
+}
+
+a.lotusScope {
+	text-decoration: none !important
 }
 
 
@@ -282,18 +289,20 @@ body,
 
 .lotusui30 .lotusMenu h3, // activities, aktivitäten
 .lotusui30 .lotusColLeft .lotusSection h2, // activities, aktivitäten
-.lotusui30 .lotusMenu li a, .lotusui30 .lotusMenu li a:visited, .lotusui30 .lotusMenu li a:hover, .lotusui30 .lotusMenu li a:focus, .lotusui30 .lotusMenu li a:active {
+ {
 	font-family: $roboto !important;
 	box-shadow: none;
 	text-shadow: none;
-
 }
 
 .lotusui30 .lotusMenu h3, // activities, aktivitäten
 .lotusui30 .lotusColLeft .lotusSection h2, // activities, aktivitäten
-.lotusui30 .lotusMenu li a {
+.lotusui30 .lotusMenu li a,
+.lotusui30_layout .lotusColLeft a, 
+.lotusui30_layout .lotusColLeft a:visited {
 	color: $darkgray !important;
 	text-shadow: none;
+	text-decoration: none !important;
 }
 
 
@@ -308,6 +317,19 @@ body,
 	box-shadow: none;
 	text-shadow: none;
 	border-right: 0;
+}
+
+// Personen suchen
+
+#dogearPeopleArea h3 a,
+#dogearPeopleArea h3 a:visited {
+	text-shadow: none !important;
+	color: $gray !important;
+	text-decoration: underline !important;
+	&:hover, &:focus {
+		text-decoration: none!important;
+		color: $yellow !important;
+	}
 }
 
 // Icons in Sidebar
@@ -365,16 +387,53 @@ background-position: -336px 0; // -368px 0;
 background-position: -384px 0; //-416px 0;
 }
 
+// DATEIEN Seite
+
+.lotusui30 .lotusMenu .lotusHeading a, 
+.lotusui30 .lotusMenu .lotusHeading a:visited, 
+.lotusui30 .lotusMenu .lotusHeading a:hover, 
+.lotusui30 .lotusMenu .lotusHeading a:focus,
+.lotusui30 .lotusMenu .lotusHeading a:active,
+ .lotusui30 .lotusMenu h3 a, 
+ .lotusui30 .lotusMenu h3 a:visited, 
+ .lotusui30 .lotusMenu h3 a:hover, 
+ .lotusui30 .lotusMenu h3 a:focus, 
+ .lotusui30 .lotusMenu h3 a:active {
+ 	text-shadow: none;
+ }
+
+  .lotusui30 .lotusMenu h3 a:visited, 
+ .lotusui30 .lotusMenu h3 a:hover, 
+ .lotusui30 .lotusMenu h3 a:focus, 
+ .lotusui30 .lotusMenu h3 a:active {
+ 	color: $yellow !important;
+ }
+
+ .lotusui30 .lotusMenu h3.lotusSelected {
+ 	background: none !important;
+ 	border: none !important;
+ 	box-shadow: none !important;
+ 	a {
+ 		color: $yellow !important;
+ 	}
+ }
+
 //===========================================================
 // Tags
 
 // activities, aktivitäten ==> tags
-.lotusui30 .lotusSection .lconnTagCloudContent,
+
+.lotusui30 .lotusSectionBody[dojoattachpoint="tagCloudContent"], 
+.lotusui30 #socialTagsSubArea, 
+.lotusui30 #lconnTagCloudContent, 
+.lotusui30 .lotusSection .lconnTagCloudContent, 
+.lotusui30 .lotusSectionBody.lconnFacet, 
+.lotusui30 .lotusWidget2 .lconnTagCloudContent,
 // my profile
 .myProfile .lotusChunk #socialTagsSubArea
  {
 	margin-top: 8px;
-	background: lighten($gray, 40%);
+	background: lighten($gray, 40%) !important;
 	border-top: darken($sidebargray, 10%);
 	border-bottom: darken($sidebargray, 10%);
 	color: $gray; 
@@ -383,7 +442,7 @@ background-position: -384px 0; //-416px 0;
 
 // TAGS heading
 .lotusui30 .lotusColLeft .lotusSection h2,
-.myProfile .lotusChunk h2 span  {
+.myProfile .lotusChunk h2  {
 	padding-top: 10px;
 	border-bottom: 0;
 	border-top: 1px solid #cccccc;
@@ -405,14 +464,21 @@ background-position: -384px 0; //-416px 0;
 	@extend %heading;
 	&:hover {
 		text-decoration: underline;
+		outline: none;
 	}
 }
 
-.lotusui30 .lotusSection h2, .lotusui30 .lotusWidget h2, .lotusui30 .lotusWidget2 h2, .lotusui30 .dijitTitlePaneTitle,
-.lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1
+.lotusui30 .lotusContent {
+ .lotusSection h2, 
+ .lotusWidget h2, 
+ .lotusWidget2 h2, 
+ .dijitTitlePaneTitle,
+ .lotusHeader h1
   {
   	@extend %headingborder;
+  }
 }
+
 
 // other pages headers
 .lotusui30 .lotusMain .lotusBoard .lotusHeader a.asHeaderLink,
@@ -420,6 +486,7 @@ background-position: -384px 0; //-416px 0;
 {
 	color: $blue;
 	font-family: $roboto !important;
+	text-decoration: none !important;
 }
 
 .lotusui30 .lotusHeader h1 // MEine Aktivitäten 
@@ -434,7 +501,10 @@ background-position: -384px 0; //-416px 0;
 	padding-bottom: .75rem;
 }
 
-.lotusui30 .lotusPortlet, .lotusui30 .lotusContent .lotusWidget {
+.lotusui30 .lotusPortlet, 
+.lotusui30 .lotusContent .lotusWidget,
+.lotusui30_layout .lotusMain .lotusContent
+ {
 	@include border-radius(6px);
 }
 
@@ -492,21 +562,53 @@ background-position: -384px 0; //-416px 0;
 	background-color: lighten($gray, 40%) !important;
 }
 
+// Visitenkarte
+
+.lotusui30 a.lotusVCardHover, .lotusui30 a.lotusVCardHover:visited {
+	background: $blue;
+}
+
+//===========================================================
+// Widgets RIGHT SIDEBAR
 // Sidebar right / Sections / Right sidebar / widgets right sidebar
 
-.lotusui30 .lotusSection2 .lotusHeading, .lotusui30 .lotusSection2 .lotusHeading2 {
+.lotusui30 .lotusSection h2, 
+.lotusui30 .lotusWidget h2, 
+.lotusui30 .lotusWidget2 h2, 
+.lotusui30 .dijitTitlePaneTitle,
+.lotusui30 .lotusSection2 .lotusHeading, 
+.lotusui30 .lotusSection2 .lotusHeading2 {
 	color: $blue !important;
 }
 
 // Sidbare widget
 
-.lotusSection2,
-.lotusSection2.homepage-widget {
+.lotusColRight .lotusSection,
+.lotusColRight .lotusSection2,
+.lotusColRight .lotusSection2.homepage-widget,
+.lotusColRight .lotusWidget2 {
 	border: 1px solid lighten($gray, 40%) !important;
 	@include border-radius(6px);
 	padding: 10px 10px 24px 10px;
 }
 
+// Profile - Berichtsweg, Netzwerk
+.lotusColRight .lotusWidget2 h2 {
+	border-bottom: 0 !important;
+}
+
+.lotusui30 .lotusColLeft .lotusSection2 .lotusHeading, 
+.lotusui30 .lotusColLeft .lotusSection h2,
+.lotusui30 .lotusColLeft .lotusSection h2 span.lotusLeft,
+.lotusui30 .lotusColLeft .lotusWidget h2, 
+.lotusui30 .lotusColLeft .lotusWidget2 h2,
+.lotusui30 .lotusColLeft .dijitTitlePaneTitle {
+	text-shadow: none;
+	color: $darkgray;
+	&:hover, &:focus {
+		color: $yellow;
+	}
+}
 
 // END widgets
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -555,6 +657,7 @@ background-position: -384px 0; //-416px 0;
 	font-family: $roboto !important;
 	font-weight: 400 !important;
 	font-size: 14px !important;
+	text-decoration: none !important;
 }
 
 .lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
@@ -646,7 +749,7 @@ body.xsp {
 
 // Heading Content
 
-.lotusui .lotusForm .lotusContent h2 {
+.xsp .lotusForm .lotusContent h2 {
 	@extend %heading;
 	@extend %headingborder;
 	padding-bottom: 12px;
@@ -660,6 +763,7 @@ body.xsp {
 .lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton // Apps buttons
 {
 	@extend %button;
+	text-shadow: none !important;
 }
 
 .lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton // Apps buttons
@@ -667,8 +771,16 @@ body.xsp {
 	@include border-radius(6px);
 }
 
+.lotusui30 span.lotusBtn a, 
+.lotusui30 span.lotusBtn a:visited, 
+.lotusui30 span.lotusBtn a:hover, 
+.lotusui30 span.lotusBtn a:focus, 
+.lotusui30 span.lotusBtn a:active {
+	text-decoration: none !important;
+}
 
-.lotusui .lotusForm .lotusContent table {
+
+.xsp .lotusForm .lotusContent table {
 	margin-bottom: 12px;
 	margin-bottom: .75rem;
 	td input, td select {
@@ -677,7 +789,7 @@ body.xsp {
 	}
 }
 
-.lotusui table td>a {
+.xsp table td>a {
 	color: $blue !important;
 	text-decoration: underline !important;
 	font-weight: 400 !important;

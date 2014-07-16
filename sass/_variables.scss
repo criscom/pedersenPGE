@@ -1,7 +1,7 @@
 
 %heading {
 	color: $blue !important;
-	text-decoration: none;
+	text-decoration: none !important;
 	font-family: $roboto !important;
 	font-weight: 400;
 	letter-spacing: 0.05em;
@@ -33,6 +33,7 @@
   *background-color: #ff9900; //#f89406
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  text-decoration: none !important;
   &:hover, &:focus {
   	color: #ffffff;
   	background: transparent !important;
