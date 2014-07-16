@@ -23,10 +23,14 @@ body,
 
 // fonts and colors
 
-.lotusui30 {
+.lotusui30 .lotusContent {
 	a, a:visited {
 		@extend %textlink;
 	}
+}
+
+.lotusui30 .lotusWelcomeBox a, .lotusui30 .lotusAboutBox a {
+	color: white;
 }
 
 // ===========================================================
@@ -198,9 +202,10 @@ body,
 	img {
 		display: none;
 	}
-	.lotusText {
+	.lotusText, .lotusText a {
 		font-weight: 100 !important;
 		color: $blue !important;
+		text-decoration: none !important;
 	}
 }
 
@@ -493,6 +498,9 @@ background-position: -384px 0; //-416px 0;
 {
 	margin-bottom: 8px;
 	margin-bottom: .5rem;
+	a {
+		text-decoration: none !important;
+	}
 }
 
 .lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1
