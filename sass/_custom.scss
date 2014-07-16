@@ -18,8 +18,28 @@ body,
 	color: white;
 }
 
+
+
+
+// fonts and colors
+
+.lotusui30 {
+	a, a:visited {
+	color: $blue;
+	font-weight: 700;
+	text-decoration: underline;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+
+
+
 //===========================================================
 // Pedersen Logo section
+
 
 .pedersenBanner {
 	height: 70px;
@@ -51,6 +71,13 @@ body,
 	width: 317px;
 	float: right;
 }
+
+
+// Logo section end
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
 
 //===========================================================
 // Banner
@@ -131,9 +158,11 @@ body,
 	font-size: 14px;
 }
 
-// Share button
+// BUTTON stylings
 
-.lotusui30 .lotusBanner ul.lotusInlinelist li a.lotusBannerBtn {
+.lotusui30 .lotusBanner ul.lotusInlinelist li a.lotusBannerBtn, // Share button
+.lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton, .lotusBtnImg // Apps buttons
+{
 	font-family: $roboto;
 	color: #ffffff;
 	font-weight: 400 !important;
@@ -144,7 +173,7 @@ body,
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffcb62), to(#ff9900));
   background-image: -webkit-linear-gradient(top, #ffcb62, #ff9900);
   background-image: -o-linear-gradient(top, #ffcb62, #ff9900);
-  background-image: linear-gradient(to bottom, #ffcb62, #ff9900);
+  background-image: linear-gradient(to bottom, #ffcb62, #ff9900) !important;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#ffff9900', GradientType=0);
   border-color: #ff9900 #ff9900 #ad6704;
@@ -176,6 +205,41 @@ body,
 	text-decoration: none;
 	color: $darkgray;
 }
+
+
+// END banner section
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+
+//===========================================================
+// Title bar
+
+.lotusTitleBar2 .lotusHeading {
+	font-family: $roboto !important;
+	font-weight: 300 !important;
+	font-size: 28px !important;
+	font-size: 1.75rem !important;
+	color: $blue !important;
+	img {
+		display: none;
+	}
+	.lotusText {
+		font-weight: 100 !important;
+		color: $blue !important;
+	}
+}
+
+.lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:visited, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:hover, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:focus, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:active {
+	color: $blue !important;
+}
+
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
 
 //===========================================================
 // Sidebar
@@ -353,44 +417,16 @@ background-position: -384px 0; //-416px 0;
 	border-top: 1px solid #cccccc;
 }
 
-//===========================================================
-// Title bar
 
-.lotusTitleBar2 .lotusHeading {
-	font-family: $roboto !important;
-	font-weight: 300 !important;
-	font-size: 28px !important;
-	font-size: 1.75rem !important;
-	color: $blue !important;
-	img {
-		display: none;
-	}
-	.lotusText {
-		font-weight: 100 !important;
-		color: $blue !important;
-	}
-}
+// END Sidebar
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:visited, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:hover, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:focus, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:active {
-	color: $blue !important;
-}
+
+
 
 //===========================================================
 // Widgets
 
-// fonts and colors
-
-
-.lotusui30 {
-	a, a:visited {
-	color: $blue;
-	font-weight: 700;
-	text-decoration: underline;
-	}
-	a:hover {
-		text-decoration: none;
-	}
-}
 
 .lotusui30 .lotusSection2 .lotusHeading a, .lotusui30 .lotusSection h2 a, .lotusui30 .lotusWidget h2 a, .lotusui30 .lotusWidget2 h2 a {
 	color: $blue !important;
@@ -504,7 +540,16 @@ background-position: -384px 0; //-416px 0;
 	padding: 10px 10px 24px 10px;
 }
 
+
+// END widgets
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+
+//===========================================================
 // Rufen Sie Aktualisierungen ab 
+
 
 .lotusui30 .lotusWelcomeBox {
 	background: lighten($blue, 5%);
@@ -521,7 +566,15 @@ background-position: -384px 0; //-416px 0;
 	box-shadow: 0 1px 0 lighten($blue, 10%), 0 1px 2px lighten($blue, 20%) inset;
 }
 
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+
+//===========================================================
 // tabs 
+
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab, 
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab:visited, 
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab:hover, 
@@ -593,9 +646,16 @@ background-position: -384px 0; //-416px 0;
 	background: white;
 }
 
+
 // TABS end
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
+.lotusPlaceBar h2 {
+	color: $blue !important;
+}
+
+//===========================================================
 // footer
 
 // background color from gray to white

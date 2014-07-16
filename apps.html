@@ -1,0 +1,982 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="de" xml:lang="de" class="dj_webkit dj_safari dj_contentbox"><head><script type="text/javascript">(function() {
+var s=window.location.search;
+var enableLogging=s && (
+s.indexOf("debug=dojo") != -1 ||
+s.indexOf("debug=true") != -1 ||
+s.indexOf("debug-hp"));
+if (enableLogging) {
+var backupVer=function() {
+var msg="", i;
+for (i=0; i < arguments.length; i++) {
+msg+=arguments[i] + " ";
+}
+window.console.log(msg);
+};
+if (window.console && window.console.debug) {
+try {
+window.hp_console_debug=window.console.debug;
+window.hp_console_debug("Create hp_console_debug()");
+} catch (e) {
+window.hp_console_debug=backupVer;
+}
+} else { 
+window.hp_console_debug=backupVer;
+}
+} else {
+window.hp_console_debug=function() {};
+}
+})();
+</script> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="private,max-age=0"><!-- Copyright IBM Corp. 2012, 2013  All Rights Reserved.              -->
+
+<link rel="shortcut icon" href="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.oneui3.styles/imageLibrary/Icons/ComponentsGray/HomeGray.ico?etag=20130828.201043" type="image/x-icon">
+<title>IBM Connections-Homepage</title> 
+ 
+
+
+ 
+<!-- Copyright IBM Corp. 2013  All Rights Reserved.                    -->
+
+
+<!--[if IE 6]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie lotusui_ie6";</script><![endif]-->
+<!--[if IE 7]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie lotusui_ie7";</script><![endif]-->
+<!--[if IE 8]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie8";</script><![endif]-->
+<!--[if IE 9]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie9";</script><![endif]-->
+<link rel="stylesheet" type="text/css" id="lotusBaseStylesheet" href="https://connections.pedersenandpartners.com:9444/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/base/package3.css&amp;etag=20130828.201043" appname="homepage" base="https://connections.pedersenandpartners.com:9444/connections/resources/web/" query="?version=oneui3&amp;rtl=false&amp;etag=20130828.201043" theme="gen4" defaulttheme="gen4" oneui="3">
+<link rel="stylesheet" type="text/css" id="lotusSpritesStylesheet" href="https://connections.pedersenandpartners.com:9444/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/sprites.css&amp;etag=20130828.201043">
+<link rel="stylesheet" type="text/css" id="lotusThemeStylesheet" href="https://connections.pedersenandpartners.com:9444/connections/resources/web/_lconntheme/gen4.css?version=oneui3&amp;rtl=false&amp;etag=20130828.201043">
+<!-- Copyright IBM Corp. 2012, 2013  All Rights Reserved.              -->
+
+<link rel="stylesheet" type="text/css" id="lotusAppStylesheet" href="https://connections.pedersenandpartners.com:9444/connections/resources/web/_lconnappstyles/gen4/homepage.css?version=oneui3&amp;rtl=false&amp;etag=20130828.201043">
+
+
+<link rel="stylesheet" type="text/css" id="custom-stylesheet" href="https://www.pedersenandpartners.com/sites/all/themes/pge_intranet/pge.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,700" rel="stylesheet" type="text/css"> 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">var lconn={};
+lconn.homepage={};
+lconn.homepage.global={};
+</script> 
+ 
+
+
+ 
+<script type="text/javascript">lconn.homepage.global.isErrorMsgDisplayed=false;
+function toggleErrorMsg(el) {
+if (lconn.homepage.global.isErrorMsgDisplayed) {
+document.getElementById("stackTrace").style.display="none";
+lconn.homepage.global.isErrorMsgDisplayed=false;
+el.innerHTML=document.getElementById("showErrorMsg").innerHTML;
+} else {
+document.getElementById("stackTrace").style.display="";
+lconn.homepage.global.isErrorMsgDisplayed=true;
+el.innerHTML=document.getElementById("hideErrorMsg").innerHTML;
+}
+}
+</script>
+ 
+<script type="text/javascript"> 
+var user="Test.NewHire@pedersenandpartners.com";
+var userid="2A2D6EBD-FF0B-2FFB-C125-7CD60054C0E9";
+ 
+lconn.homepage.userName="Test NewHire";
+lconn.homepage.userEmail="Test.NewHire@pedersenandpartners.com";
+lconn.homepage.global.getUserId=(function(){
+var userId="2A2D6EBD-FF0B-2FFB-C125-7CD60054C0E9";
+return function(){
+return userId;
+};
+}());
+</script> 
+<script type="text/javascript"> 
+lconn.homepage.global.proxyUrl='https://connections.pedersenandpartners.com:9444/homepage/web/jsp/tiles/mainTemplate.jsp';
+lconn.homepage.global.proxyUrl=lconn.homepage.global.proxyUrl.substring(0, lconn.homepage.global.proxyUrl.indexOf('/web/jsp/tiles/mainTemplate.jsp'));
+lconn.homepage.global.proxyUrl+="/web/proxy";
+ 
+var proxyUrl=lconn.homepage.global.proxyUrl;
+</script> 
+<script type="text/javascript">lconn.homepage.global.isSecure=true;
+lconn.homepage.global.contextRoot="/homepage";
+lconn.homepage.global.build="20130828.201043";
+</script> 
+<script type="text/javascript">lconn.homepage.global.services={"help":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/help","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/help"},"microblogging":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/opensocial","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/opensocial"},"bss":{"enabled":false,"ssl_enabled":false},"metrics":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/metrics","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/metrics"},"wikis":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/wikis","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/wikis"},"sand":{"enabled":true,"ssl_enabled":true},"personTag":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/profiles\/ibm_semanticTagServlet","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/profiles\/ibm_semanticTagServlet"},"communities":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/communities","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/communities"},"ecm_files":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/dm","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/dm"},"oauthprovider":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/oauth2","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/oauth2"},"connectionsmail":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/resources\/socmail-client","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/resources\/socmail-client"},"mediaGallery":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/news\/widgets\/lw","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/news\/widgets\/lw"},"blogs":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/blogs","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/blogs"},"webresources":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/resources","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/resources"},"news":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/news","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/news"},"oauth":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/oauth","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/oauth"},"dogear":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/dogear","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/dogear"},"opensocialLocked":{"enabled":false,"ssl_enabled":false},"mobile":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/mobile","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/mobile"},"quickr":{"enabled":false,"ssl_enabled":false},"bookmarklet":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/bookmarklet","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/bookmarklet"},"moderation":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/moderation","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/moderation"},"deploymentConfig":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/connections","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/connections"},"search":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/search","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/search"},"profiles":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/profiles","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/profiles"},"activities":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/activities","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/activities"},"directory":{"enabled":false,"ssl_enabled":false},"homepage":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/homepage","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/homepage"},"forums":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/forums","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/forums"},"cognos":{"enabled":false,"ssl_enabled":false},"opensocial":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/opensocial","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/connections\/opensocial"},"files":{"enabled":true,"secureUrl":"https:\/\/connections.pedersenandpartners.com:9444\/files","ssl_enabled":true,"url":"https:\/\/connections.pedersenandpartners.com:9444\/files"},"sametimeProxy":{"enabled":false,"ssl_enabled":false}};
+</script> 
+<script type="text/javascript">lconn.homepage.global.actionRequiredTotal="0";
+</script>
+
+<script type="text/javascript">
+var ibmConfig = {
+   serviceName: "homepage",
+   proxyURL: "/homepage/ajaxProxy/",
+   contextRootEnabler: "/homepage",
+   versionStamp: "20130828.201043"
+};
+var baseProtocol = "https";
+var baseHost = "connections.pedersenandpartners.com:9444";
+var basePath = "/connections/resources";
+var needProxy = (baseHost != window.location.host || baseProtocol+":" != window.location.protocol);
+var djConfig = {
+   isDebug: false,
+   baseUrl: (needProxy ? (ibmConfig.proxyURL + encodeURIComponent(baseProtocol) + "/" + encodeURIComponent(baseHost)) : (baseProtocol + "://" + baseHost)) + basePath + "/web/dojo/",
+   locale: "de-de",
+   dojoBlankHtmlUrl: "/homepage/static/20130828.201043/nav/blankIE.html",
+   blankGif: "https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043",
+   useCommentedJson: true,  
+   proxy: "/homepage/ajaxProxy",
+   localizationComplete: true
+};
+</script>
+<script type="text/javascript">
+var netJazzAjaxConfig = {
+    base: "https://connections.pedersenandpartners.com:9444/connections/resources",
+    skipStyles: true,
+    params: "etag=20130828.201043&lang=de&country=DE"
+};
+CKEDITOR_BASEPATH = window.CKEDITOR_BASEPATH || "https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.oneui.ckeditor/editor/"; 
+</script>
+<script type="text/javascript">djConfig.staticRoot="/homepage/static/20130828.201043";
+</script>
+<script type="text/javascript" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/_js?include=dojo.dojo.js~&amp;etag=20130828.201043&amp;lang=de&amp;country=de"></script>
+<script type="text/javascript" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/_js?include=lconn.core.bundle_common.js~&amp;exclude=dojo.dojo.js~&amp;etag=20130828.201043&amp;lang=de&amp;country=de"></script>
+<script type="text/javascript" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/_js?include=lconn.homepage.modules.common.js~&amp;exclude=dojo.dojo.js~lconn.core.bundle_common.js~&amp;etag=20130828.201043&amp;lang=de&amp;country=de"></script>
+<script type="text/javascript" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/_js?include=lconn.homepage.modules.widgets.js~&amp;exclude=dojo.dojo.js~lconn.core.bundle_common.js~lconn.homepage.modules.common.js~&amp;etag=20130828.201043&amp;lang=de&amp;country=de"></script>
+<script type="text/javascript">dojo.addOnLoad(function(){
+dojo.parser.parse(dojo.byId("paletteWrapper"));
+});
+</script> 
+<script type="text/javascript">lconn.homepage.metrics.track.read("widgets");
+</script> 
+ 
+ 
+ 	
+
+ 
+ 
+ 
+ 
+<script type="text/javascript">dojo.require("lconn.homepage.core.layout.WidgetLayoutModel");
+dojo.require("lconn.homepage.core.layout.WidgetModelUpdater");
+dojo.require("lconn.homepage.core.layout.WidgetPersister");
+var adapter=new lconn.homepage.core.layout.ContainerToColumnAdapter();
+adapter.addMapping("1", 0);
+adapter.addMapping("2", 1);
+adapter.addMapping("3", 2);
+var layoutModel=new lconn.homepage.core.layout.WidgetLayoutModel();
+layoutModel.setContainerToColumnAdapter(adapter);
+layoutModel.setPageId('e496762e-0b67-4758-89b2-2ceb70747b80');
+layoutModel.setPageType(layoutModel.WIDGET_TAB);
+layoutModel.setNumberOfColumns(2);
+new lconn.homepage.core.layout.WidgetModelUpdater(layoutModel);
+new lconn.homepage.core.layout.WidgetPersister(layoutModel, '/homepage/web/handleUP.action');
+</script><script type="text/javascript">var widgets=[];
+var firstColWidgets=[];
+var secondColWidgets=[];
+var thirdColWidgets=[];
+function WidgetModel() {
+};
+function PersistenceModel() {
+};
+var widget=new WidgetModel();
+widget.id="dogear46x0a77x4a43x82aaxb00187218631";
+widget.title="Lesezeichen";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/bookmarks/dogear.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconBookmarks16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="dembk46x0a77x4a43x82aaxb00187218631";
+widget.title="Meine Lesezeichen";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/bookmarks/personal/mybookmarks.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconBookmarks16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="depbk46x0a77x4a43x82aaxb00187218631";
+widget.title="Beliebte Lesezeichen";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/bookmarks/popular/popularbookmarks.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconBookmarks16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="derbk46x0a77x4a43x82aaxb00187218631";
+widget.title="Neue Lesezeichen";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/bookmarks/recent/recentbookmarks.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconBookmarks16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="dewl46x0a77x4a43x82aaxb00187218631";
+widget.title="Meine Beobachtungsliste";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/bookmarks/watching/watchlist.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconBookmarks16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="activitixa187x491dxa4bfx2e1261d0b6ec";
+widget.title="Aktivit\u00E4ten";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/activities/activities.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconActivities16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="myactxa187x491dxa4bfx2e1261d0b6ec";
+widget.title="Meine Aktivit\u00E4ten";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/activities/personal/myactivities.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconActivities16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="pubactxa187x491dxa4bfx2e1261d0b6ec";
+widget.title="\u00D6ffentliche Aktivit\u00E4ten";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/activities/pub/publicactivities.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconActivities16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="communitxe7c4x4e08xab54x80e7a4eb8933";
+widget.title="Communitys";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/communities/communities.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconCommunities16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="mycommunxe7c4x4e08xab54x80e7a4eb8933";
+widget.title="Meine Communitys";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/communities/personal/mycommunities.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconCommunities16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="pubcommuxe7c4x4e08xab54x80e7a4eb8933";
+widget.title="\u00D6ffentliche Communitys";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/communities/pub/publiccommunities.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconCommunities16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="blogs448xcd34x4565x9469x9c34fcefe48c";
+widget.title="Blogs";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/blogs/blogs.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconBlogs16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="profilesxaac7x4229x87bbx9a1c3551c591";
+widget.title="Profile";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/profiles/profiles.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconProfiles16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="myprofisxaac7x4229x87bbx9a1c3551c591";
+widget.title="Mein Profil";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/profiles/personal/myprofile.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconProfiles16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="colprofsxaac7x4229x87bbx9a1c3551c591";
+widget.title="Mein Netzwerk";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/profiles/colleagues/colleagueprofile.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconProfiles16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="mywikiz1xaac7x4229x87BBx91ac3551c591";
+widget.title="Meine Wikis";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/wikis/mywiki.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconWikis16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="pop-wiki1xaac7x4229x87BBx91ac3551c5";
+widget.title="Beliebte Wikis";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/wikis/popularwiki.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconWikis16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="latest-wiki5jz1xaac7x4229x87BBx91ac";
+widget.title="Aktuelle Wikis";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/wikis/latestwiki.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconWikis16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="myFilesPb86locI7vRV4yY1KKawZvE8Qul88";
+widget.title="Meine Dateien";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/files/files.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconFiles16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="sharedFilesV4fv72LD5NAcGv2nbrex0ExEq";
+widget.title="Mit mir geteilte Dateien";
+widget.url="https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.homepage/widgets/files/sharedFiles.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles/images/iconFiles16.png";
+widget.isSystem="true";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="34fdacc7-e396-4066-94c1-3889f4dce65b";
+widget.title="Database Links";
+widget.url="http://connections.pedersenandpartners.com/widgets/links/linksWidget.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="fad4e604-498e-4dd2-8f51-964f6fbe4332";
+widget.title="XPages";
+widget.url="https://connections.pedersenandpartners.com:9444/communities/nav/templates/widgets/XPagesWidget/xpagesWidget.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="a48abfe5-ae17-42af-87c6-e322f5a026ee";
+widget.title="Generic HTML";
+widget.url="http://connections.pedersenandpartners.com/widgets/htmlwidget/htmlWidget.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="dff76c76-96a0-4cde-95c1-4ac7878fbd00";
+widget.title="SamplePreferences";
+widget.url="http://connections.pedersenandpartners.com/widgets/prefs/SamplePreferences.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="26f2f0de-e698-4806-9341-a7aaf447d237";
+widget.title="CRM";
+widget.url="http://connections.pedersenandpartners.com/widgets/links/linksWidget.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="d5c4f1ec-4acf-49fd-9ebd-e77084152206";
+widget.title="Test";
+widget.url="http://connections.pedersenandpartners.com/widgets/test/widget.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="20b73965-b542-48ad-bc3b-e6d331f1b55f";
+widget.title="CDB";
+widget.url="https://development.pedersenandpartners.com/Company.nsf/iwidget.iwidget";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="db081f0a-e0f3-4c4c-a5ab-e2b52d840a3e";
+widget.title="Test Widget";
+widget.url="https://development.pedersenandpartners.com/crm.nsf/widget.xml?OpenPage";
+if (true == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="e3dd7eee-f899-462c-9a9a-ba32f5b500ff";
+widget.title="Tabs";
+widget.url="https://development.pedersenandpartners.com/crm.nsf/tabs.xml?OpenPage";
+if (true == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="bdb526a6-1470-414f-b31c-35a5cc3d3baf";
+widget.title="CRM Apps";
+widget.url="https://development.pedersenandpartners.com/crm.nsf/crm-widget.xml?OpenPage";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="bbf3aec6-a091-45c6-af02-d2947c5d491e";
+widget.title="BDDB Dashboard";
+widget.url="http://connections.pedersenandpartners.com/widgets/bddb/bddbWidget.xml";
+if (false == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var widget=new WidgetModel();
+widget.id="34db461c-1684-49ec-b647-d1536cee3384";
+widget.title="Test Prefs Gadget";
+widget.url="http://connections.pedersenandpartners.com/widgets/gadget/gadget.xml";
+if (true == true) {
+widget.type="gadget";
+}
+else {
+widget.type="iWidget";
+}
+widget.iconUrl ="";
+widget.isSystem="false";
+widgets.push(widget);
+var persis1=new PersistenceModel();
+persis1.widgetId="dogear46x0a77x4a43x82aaxb00187218631";
+persis1.rowNum="0";
+persis1.widgetInstanceId="10ec280d-46ff-4e1b-9665-30b19b757e17";
+firstColWidgets.push(persis1);
+layoutModel.appendWidgetToColumn(persis1.widgetInstanceId, 0);
+var persis1=new PersistenceModel();
+persis1.widgetId="communitxe7c4x4e08xab54x80e7a4eb8933";
+persis1.rowNum="1";
+persis1.widgetInstanceId="d13694ff-e8ea-4ce8-8032-baad6c5e678b";
+firstColWidgets.push(persis1);
+layoutModel.appendWidgetToColumn(persis1.widgetInstanceId, 0);
+var persis1=new PersistenceModel();
+persis1.widgetId="profilesxaac7x4229x87bbx9a1c3551c591";
+persis1.rowNum="2";
+persis1.widgetInstanceId="6b837ba3-e524-4a17-b57d-0dd2f087668e";
+firstColWidgets.push(persis1);
+layoutModel.appendWidgetToColumn(persis1.widgetInstanceId, 0);
+var persis1=new PersistenceModel();
+persis1.widgetId="myFilesPb86locI7vRV4yY1KKawZvE8Qul88";
+persis1.rowNum="3";
+persis1.widgetInstanceId="5325b1a2-8e6a-4337-b022-df3a95db64df";
+firstColWidgets.push(persis1);
+layoutModel.appendWidgetToColumn(persis1.widgetInstanceId, 0);
+var persis1=new PersistenceModel();
+persis1.widgetId="20b73965-b542-48ad-bc3b-e6d331f1b55f";
+persis1.rowNum="4";
+persis1.widgetInstanceId="74472ec7-f7bb-4ccb-8905-d3b006e9b97d";
+firstColWidgets.push(persis1);
+layoutModel.appendWidgetToColumn(persis1.widgetInstanceId, 0);
+var persis1=new PersistenceModel();
+persis1.widgetId="e3dd7eee-f899-462c-9a9a-ba32f5b500ff";
+persis1.rowNum="5";
+persis1.widgetInstanceId="6336cff4-8e53-48fe-a1df-dbe310867900";
+firstColWidgets.push(persis1);
+layoutModel.appendWidgetToColumn(persis1.widgetInstanceId, 0);
+var persis1=new PersistenceModel();
+persis1.widgetId="bbf3aec6-a091-45c6-af02-d2947c5d491e";
+persis1.rowNum="6";
+persis1.widgetInstanceId="9c5c7e53-d9c5-4e1b-a50d-9a9f26a7914d";
+firstColWidgets.push(persis1);
+layoutModel.appendWidgetToColumn(persis1.widgetInstanceId, 0);
+var persis2=new PersistenceModel();
+persis2.widgetId="activitixa187x491dxa4bfx2e1261d0b6ec";
+persis2.rowNum="0";
+persis2.widgetInstanceId="6e73278d-7628-48db-97c6-3acd72db88af";
+secondColWidgets.push(persis2);
+layoutModel.appendWidgetToColumn(persis2.widgetInstanceId, 1);
+var persis2=new PersistenceModel();
+persis2.widgetId="blogs448xcd34x4565x9469x9c34fcefe48c";
+persis2.rowNum="1";
+persis2.widgetInstanceId="46407724-4ea3-44d5-a66b-1768c6848d07";
+secondColWidgets.push(persis2);
+layoutModel.appendWidgetToColumn(persis2.widgetInstanceId, 1);
+var persis2=new PersistenceModel();
+persis2.widgetId="latest-wiki5jz1xaac7x4229x87BBx91ac";
+persis2.rowNum="2";
+persis2.widgetInstanceId="1d851aa2-41a8-4820-9a8f-08563ab021b3";
+secondColWidgets.push(persis2);
+layoutModel.appendWidgetToColumn(persis2.widgetInstanceId, 1);
+var persis2=new PersistenceModel();
+persis2.widgetId="fad4e604-498e-4dd2-8f51-964f6fbe4332";
+persis2.rowNum="3";
+persis2.widgetInstanceId="70997259-fae1-4b45-ac6d-c7102c8f8d5b";
+secondColWidgets.push(persis2);
+layoutModel.appendWidgetToColumn(persis2.widgetInstanceId, 1);
+var persis2=new PersistenceModel();
+persis2.widgetId="db081f0a-e0f3-4c4c-a5ab-e2b52d840a3e";
+persis2.rowNum="4";
+persis2.widgetInstanceId="d3c0a276-5f8e-46f6-8172-67fcff628ee4";
+secondColWidgets.push(persis2);
+layoutModel.appendWidgetToColumn(persis2.widgetInstanceId, 1);
+var persis2=new PersistenceModel();
+persis2.widgetId="bdb526a6-1470-414f-b31c-35a5cc3d3baf";
+persis2.rowNum="5";
+persis2.widgetInstanceId="9e4ccd8b-454f-44e5-a669-fdd87dbda607";
+secondColWidgets.push(persis2);
+layoutModel.appendWidgetToColumn(persis2.widgetInstanceId, 1);
+var persis2=new PersistenceModel();
+persis2.widgetId="34db461c-1684-49ec-b647-d1536cee3384";
+persis2.rowNum="6";
+persis2.widgetInstanceId="c98ea672-313c-4d69-8bd5-e19ed9f6750d";
+secondColWidgets.push(persis2);
+layoutModel.appendWidgetToColumn(persis2.widgetInstanceId, 1);
+</script>
+ 
+ 
+ 
+<script type="text/javascript">dojo.require("lconn.homepage.core.dnd.Source");
+dojo.require("lconn.homepage.core.dnd.avatar");
+var manager=dojo.dnd.manager();
+manager.makeAvatar=function(){
+return new lconn.homepage.core.dnd.avatar(this);
+};
+</script> 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">dojo.require("lconn.homepage.core.auth.formBasedUtility");
+dojo.require("lconn.core.auth.whiteListHelper");
+var helper=new lconn.core.auth.whiteListHelper(
+lconn.homepage.global.services, lconn.homepage.global.proxyUrl);
+lconn.homepage.core.auth.formBasedUtility.init(
+'/homepage', helper);
+</script>
+
+ 
+
+
+ 
+ 
+ 
+ 
+<script type="text/javascript">dojo.require("lconn.homepage.core.widget.iwExtension.WidgetDescriptorStore");
+(function(){
+var store=lconn.homepage.core.widget.iwExtension.widgetStore;
+lconn.homepage.global.beans={
+"10ec280d-46ff-4e1b-9665-30b19b757e17": "",
+"d3c0a276-5f8e-46f6-8172-67fcff628ee4": "",
+"6336cff4-8e53-48fe-a1df-dbe310867900": "",
+"5325b1a2-8e6a-4337-b022-df3a95db64df": "",
+"9e4ccd8b-454f-44e5-a669-fdd87dbda607": "",
+"c98ea672-313c-4d69-8bd5-e19ed9f6750d": "",
+"9c5c7e53-d9c5-4e1b-a50d-9a9f26a7914d": "",
+"d13694ff-e8ea-4ce8-8032-baad6c5e678b": "",
+"6e73278d-7628-48db-97c6-3acd72db88af": "useHomepageEnhancedFeatures=true,recent=3,publicNumberEntries=3,modePersist=Normal",
+"46407724-4ea3-44d5-a66b-1768c6848d07": "",
+"74472ec7-f7bb-4ccb-8905-d3b006e9b97d": "",
+"70997259-fae1-4b45-ac6d-c7102c8f8d5b": "",
+"6b837ba3-e524-4a17-b57d-0dd2f087668e": "",
+"1d851aa2-41a8-4820-9a8f-08563ab021b3": ""};
+})();
+</script>
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">lconn.homepage.core.onload.userLinkGenerator.linkifyUser();
+var microfmtTagScope="span";
+</script> 
+<style type="text/css">/* equal to min-height in IE */
+.X-person-display-inline {
+height: expression(documentElement.clientHeight ? (
+documentElement.clientHeight < 1200 ? "60px" :
+documentElement.clientHeight + "px") : "auto");
+background-color: #ffffff;
+}
+/* Hack to change settings for non-IE browsers with min-height attribute */
+html>body .X-person-display-inline {
+height: auto;
+min-height: 60px
+}
+</style>
+
+<script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="https://connections.pedersenandpartners.com:9444/connections/opensocial/gadgets/js/cre.iruntime:cre.iwidget.event:cre.wire:cre.iwidget:cre.iwidget.itemset:cre.util.stringify:cre.service.event:cre.osgadget:cre.messages.de:core:container:rpc:pubsub-2:views:embedded-experiences:open-views:selection:actions:viewenhancements:shared-script-frame:cre.service.people:ibm.connections.sharedialog:com.ibm.connections.sharedialog:com.ibm.connections.ee:ibm.connections.ee:container.nongadget:open-views.js?c=1&amp;_ic_versionStamp=20130828.201043" src="https://connections.pedersenandpartners.com:9444/connections/opensocial/gadgets/js/cre.iruntime:cre.iwidget.event:cre.wire:cre.iwidget:cre.iwidget.itemset:cre.util.stringify:cre.service.event:cre.osgadget:cre.messages.de:core:container:rpc:pubsub-2:views:embedded-experiences:open-views:selection:actions:viewenhancements:shared-script-frame:cre.service.people:ibm.connections.sharedialog:com.ibm.connections.sharedialog:com.ibm.connections.ee:ibm.connections.ee:container.nongadget:open-views.js?c=1&amp;_ic_versionStamp=20130828.201043"></script><script type="text/javascript" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/_js?include=com.ibm.social.sharebox.dialog.js&amp;exclude=dojo.dojo.js~lconn.core.bundle_common.js~lconn.homepage.modules.common.js~lconn.homepage.modules.widgets.js~&amp;etag=20130828.201043&amp;lang=de&amp;country=DE"></script></head> 
+<body class="lotusui lotusui30dojo lotusui30_body lotusui30_fonts lotusui30 lconnHomepageMyPage lotusSpritesOn"><span id="semtagmenu" role="tooltip" style="position: absolute; display: none;"></span><div id="lotusFrame" class="lotusui30_layout lotusFrame"><div role="banner">
+<!-- START include PPL 2014-07-12 --> 
+ <div class="pedersenBanner" id="pedersenBanner">
+  <div class="lotusRightCorner">
+    <div class="lotusInner">
+      <div class="pedersenLogo left"></div>
+      <div class="pgeLogo right"></div>
+    </div>
+  </div>
+ </div>
+<!-- END include PPL 2014-07-12 -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+<div id="lotusBanner" class="lotusBanner"><script type="text/javascript">
+if (self != top) {
+   try {
+      // Reset location if in different host.
+      // per Same Origin Policy, try to get top location attributes,
+      // will get permission denied if in different origin.
+      if (self.location.hostname != top.location.hostname)
+         top.location=self.location;
+   }catch(e){
+      // reset location if in different origin
+      top.location=self.location;
+   }
+}
+</script>
+<div class="lotusRightCorner">
+   <div class="lotusInner"><div class="lotusLogo" id="lotusLogo"><span class="lotusAltText">IBM Connections</span></div><ul class="lotusInlinelist lotusUtility lotusNowrap" id="headerMenuContainer"><li class="lotusFirst" id="headerUserText" style="display: inline;"><span id="logoutLabel" aria-label="Anmelden / abmelden" role="region"><a class="lotusUser" id="headerUserName" onmouseover="dojo.require('lconn.core.header');lconn.core.header.menuMouseover(this);" onclick="dojo.require('lconn.core.header');lconn.core.header.menuClick(this);" onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" role="button" _lconn_menuid="lconnheadermenu-user" aria-label="Aktueller Benutzer Test NewHire" src="/homepage/static/20130828.201043!de_de/nav/templates/menu/user.jsp?appName=homepage&amp;username=Test+NewHire&amp;userid=2A2D6EBD-FF0B-2FFB-C125-7CD60054C0E9" href="javascript:;" onmenuloaded="lconn.core.header.apps.updateUserNameMenu"> <span id="usernameText">Test NewHire</span> <img role="presentation" alt="" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lotusArrow lotusDropDownSprite"><span class="lotusAltText">▼</span></a></span></li><li id="logoutLi" style="display:none"><span id="loginLabel" aria-label="Anmelden / abmelden"><a id="logoutLink" href="javascript:;">Abmelden</a></span></li><li class="shareboxLi" id="headerSharebox"><a class="lotusBannerBtn" href="javascript:;" onclick="dojo.stopEvent(event);dojo.require('com.ibm.social.sharebox.dialogStub');com.ibm.social.sharebox.dialogProxy.show();" aria-haspopup="true" role="button">Teilen</a></li><li id="languageSelectorText" style="display: none;"></li><li id="lotusBannerMail" class="lotusFirst " style="" external-content-style="height:auto" external-content="os-site-mail-hoverec85f7a2-b0bc-45d7-8fad-6fe59968eebb"><a onmouseover="dojo.require('com.ibm.lconn.socialmail.gadget.NavigationHandler');
+                                       (new com.ibm.lconn.socialmail.gadget.NavigationHandler()).navigateInbox(this, 'onmouseover');" onclick="dojo.require('com.ibm.lconn.socialmail.gadget.NavigationHandler');
+                                       (new com.ibm.lconn.socialmail.gadget.NavigationHandler()).navigateInbox(this, 'onclick');" onfocus="dojo.require('com.ibm.lconn.socialmail.gadget.NavigationHandler');
+                                       (new com.ibm.lconn.socialmail.gadget.NavigationHandler()).navigateInbox(this, 'onfocus');" role="button" _lconn_menuid="lconnheadermenu-mail" aria-label="Mail" src="/homepage/static/20130828.201043!de_de/nav/templates/menu/mail.jsp" href="javascript:;" errormessage="Mail derzeit nicht erreichbar"><img role="presentation" alt="" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lconnSprite lconnSprite-iconMailWhite16"><span class="lotusAltText">Mail</span><span class="os-site-mail-notify" id="os-site-mail-notifyec85f7a2-b0bc-45d7-8fad-6fe59968eebb"><iframe id="__gadget_os-site-mail-notifyec85f7a2-b0bc-45d7-8fad-6fe59968eebb" name="__gadget_os-site-mail-notifyec85f7a2-b0bc-45d7-8fad-6fe59968eebb" src="//connections.pedersenandpartners.com:9444/connections/opensocial/gadgets/ifr?url=https%3A%2F%2Fconnections.pedersenandpartners.com%3A9444%2Fconnections%2Fresources%2Fsocmail-client%2Fgadgets%2Finbox.xml&amp;container=default&amp;view=default&amp;lang=de&amp;country=DE&amp;debug=0&amp;nocache=0&amp;sanitize=0&amp;v=ab8a5449b8044fa7e7aa99065a1f01f3&amp;st=default%3ANHe19ymP3EMLxRxW_37bJ0GkNX06C6Vyn0diTaCwEU909UKIumPFLVcvjFgue0hzze3q8kMS6VR1FnefU5yauRhOcwO1Hiu1I_gtxniUTeAaC70oiXptnIF3YnxQvda2w5pDZviOlgW7VFumvT9DVCvKoXGL6S9TMdm2JM2_fpWkrLcP4V-_3v5XaofsGk3qQ64KdyWWPoYgDo6MzBtdqLbP_Xx6ZRaGVDyQjtXw-mejiBqqmYbbWSwaGfmdjfEwvI8HJdtQpcemmhY4B3Am255HEFk5XgM5gA8aMiywraQ&amp;testmode=0&amp;refresh=14400&amp;parent=https%3A%2F%2Fconnections.pedersenandpartners.com%3A9444&amp;mid=0#up_aggregator=disabled&amp;view-params=%7B%22gadgetId%22%3A%22os-site-mail-notifyec85f7a2-b0bc-45d7-8fad-6fe59968eebb%22%2C%22dynamicSiteIdSuffix%22%3A%22ec85f7a2-b0bc-45d7-8fad-6fe59968eebb%22%7D&amp;rpctoken=367182672&amp;embeddedlevel=0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" height="15px" width="15px" onload="window.__gadgetOnLoad('https://connections.pedersenandpartners.com:9444/connections/resources/socmail-client/gadgets/inbox.xml', 'os-site-mail-notifyec85f7a2-b0bc-45d7-8fad-6fe59968eebb');" title="Unread messages" role="presentation" tabindex="-1"></iframe></span></a></li><li id="lotusBannerCalendar" class=" " style="" external-content-style="height:auto" external-content="os-site-calendar-hoverec85f7a2-b0bc-45d7-8fad-6fe59968eebb"><a onmouseover="dojo.require('com.ibm.lconn.socialmail.gadget.NavigationHandler');
+                                      (new com.ibm.lconn.socialmail.gadget.NavigationHandler()).navigateCalendar(this, 'onmouseover');" onclick="dojo.require('com.ibm.lconn.socialmail.gadget.NavigationHandler');
+                                      (new com.ibm.lconn.socialmail.gadget.NavigationHandler()).navigateCalendar(this, 'onclick');" onfocus="dojo.require('com.ibm.lconn.socialmail.gadget.NavigationHandler');
+                                      (new com.ibm.lconn.socialmail.gadget.NavigationHandler()).navigateCalendar(this, 'onfocus');" role="button" _lconn_menuid="lconnheadermenu-calendar" aria-label="Kalender" src="/homepage/static/20130828.201043!de_de/nav/templates/menu/calendar.jsp" href="javascript:;" errormessage="Kalender derzeit nicht erreichbar"><img role="presentation" alt="" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="iconsComponentsWhite16 iconsComponentsWhite16-CalendarWhite16"><span class="lotusAltText">Kalender</span></a></li><li id="headerHelpLi"><a role="button" aria-label="Hilfefenster öffnen" href="javascript:;" id="headerHelpLink"><img role="presentation" alt="" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="iconsOther16 iconsOther16-bannerHelpNormal16"><span class="lotusAltText">?</span></a></li><li><span class="lotusBranding"><img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="IBM" class="lotusIBMLogo"><span class="lotusAltText">IBM</span></span></li></ul><ul class="lotusInlinelist lotusLinks" role="navigation" aria-label="Connections"><li id="lotusBannerHomepage" class=" lotusSelected"><a href="https://connections.pedersenandpartners.com:9444/homepage/"><img alt="" role="presentation" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lconnBannerIcon lconnSprite lconnSprite-iconHomeBlue16"><span id="lconnBannerHomepageLabel">Home</span></a></li><li id="lotusBannerProfiles" class=" "><a onmouseover="dojo.require('lconn.core.header');lconn.core.header.menuMouseover(this);" onclick="dojo.require('lconn.core.header');lconn.core.header.menuClick(this);" onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" role="button" _lconn_menuid="lconnheadermenu-people" aria-label="Profile" src="/homepage/static/20130828.201043!de_de/nav/templates/menu/people.jsp" href="https://connections.pedersenandpartners.com:9444/profiles/" errormessage="" profile"="" ist="" nicht="" verfügbar"=""><img alt="" role="presentation" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lconnBannerIcon lconnSprite lconnSprite-iconProfilesBlue16">Profile <img role="presentation" alt="" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lotusArrow lotusDropDownSprite"><span class="lotusAltText">▼</span></a></li><li id="lotusBannerCommunities" class=" " widgetid="lotusBannerCommunities"><a id="lotusBannerCommunitiesLink" onmouseover="dojo.require('lconn.core.header');lconn.core.header.menuMouseover(this);" onclick="dojo.require('lconn.core.header');lconn.core.header.menuClick(this);" onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" role="button" aria-label="Communitys" src="/homepage/static/20130828.201043!de_de/nav/templates/menu/communities.jsp?authenticated=true" href="https://connections.pedersenandpartners.com:9444/communities/" errormessage="" communitys"="" ist="" nicht="" verfügbar"=""><img alt="" role="presentation" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lconnBannerIcon lconnSprite lconnSprite-iconCommunitiesBlue16">Communitys <img role="presentation" alt="" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lotusArrow lotusDropDownSprite"><span class="lotusAltText">▼</span></a></li><li id="lotusBannerApps" class="" widgetid="lotusBannerApps" aria-owns="lconnheadermenu-apps"><a onmouseover="dojo.require('lconn.core.header');lconn.core.header.menuMouseover(this);" onclick="dojo.require('lconn.core.header');lconn.core.header.menuClick(this);" onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" role="button" aria-label="Anwendungen" src="/homepage/static/20130828.201043!de_de/nav/templates/menu/apps.jsp" href="javascript:;" errormessage="" homepage"="" ist="" nicht="" verfügbar"="">Anwendungen <img role="presentation" alt="" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" class="lotusArrow lotusDropDownSprite"><span class="lotusAltText">▼</span></a></li><li id="lotusBannerHeaderMetrics" style="display:none" class=""><a href="https://connections.pedersenandpartners.com:9444/metrics/">Kennzahlen</a></li><li id="lotusBannerModeration" style="display:none" class=""><a href="https://connections.pedersenandpartners.com:9444/moderation/">Moderation</a></li></ul></div></div>
+</div><script type="text/javascript">dojo.require("lconn.core.auth");
+</script> 
+<script language="Javascript" type="text/javascript">var headerUserName=document.getElementById('headerUserName');
+if (headerUserName) {
+var welcomeUserText=document.getElementById('headerUserText');
+welcomeUserText.style.display='inline';
+}
+helpLink='https://connections.pedersenandpartners.com:9444/help/topic/com.ibm.lotus.connections.homepage.help/hframe.html';
+var headerHelpLink=document.getElementById('headerHelpLink');
+if(headerHelpLink != null) {
+headerHelpLink.onclick=function() {
+openHelpWindow(helpLink);
+}
+}; 
+</script><script type="text/javascript">dojo.addOnLoad(function() {
+/* The logout action is set up in the addOnLoad function so we are guaranteed the
+authentication JS objects are available. */
+var logoutLink=document.getElementById('logoutLink');
+if (logoutLink != null) {
+logoutLink.onclick=function() {
+var authenticated=lconn.core.auth.isAuthenticated();
+if (authenticated) {
+lconn.core.auth.logout();
+} else {
+lconn.core.auth.login();
+}
+return false;
+};
+}
+})
+</script>
+<div class="lotusTitleBar2 lotusTitleBar2Tabs"><div class="lotusWrapper"><div class="lotusInner"><div class="lotusTitleBarContent"><h2 class="lotusHeading">CRM Apps</h2><div><ul class="lotusNavTabs"><li class="lotusSelected"><div class="lotusTabWrapper"><a onclick="return false" class="lotusTab" href="https://development.pedersenandpartners.com/exec.nsf"><span class="lotusTabInner">Executive</span></a></div></li><li class=""><div class="lotusTabWrapper"><a onclick="return false" class="lotusTab" href="https://development.pedersenandpartners.com/Company.nsf"><span class="lotusTabInner">Company</span></a></div></li><li class=""><div class="lotusTabWrapper"><a onclick="return false" class="lotusTab" href="https://development.pedersenandpartners.com/ADB/assignments.nsf"><span class="lotusTabInner">Assignments</span></a></div></li><li class=""><div class="lotusTabWrapper"><a onclick="return false" class="lotusTab" href="https://development.pedersenandpartners.com/pedersenandpartners/busdev.nsf"><span class="lotusTabInner">Business Development</span></a></div></li><li class=""><div class="lotusTabWrapper"><a onclick="return false" class="lotusTab" href="https://development.pedersenandpartners.com/ADB/revenues.nsf"><span class="lotusTabInner">Revenues, Salaries &amp; KPIs</span></a></div></li></ul><div class="lotusClear"></div></div></div></div></div></div> 
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="lotusTitleBarExt"><div class="lotusWrapper"><div class="lotusInner"><ul class="lotusInlinelist lotusRight lotusActions"><li class="lotusFirst"><a id="paletteLink" role="button" href="javascript:;" onclick="lconn.homepage.global.openPalette()">Anpassen</a></li></ul></div></div></div>
+
+</div> 
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="lotusMain" id="lotusMain" style="background-image: none;"><iframe src="https://development.pedersenandpartners.com/exec.nsf" id="crmframe" width="100%" height="750" frameborder="0"></iframe></div>
+ 
+ 
+
+
+ 
+ 
+ 
+<div id="lotusFooter" class="lotusFooter" role="contentinfo"> 
+<ul><li><a href="https://connections.pedersenandpartners.com:9444/homepage/">Home</a></li><li><a href="javascript:;" onclick="javascript:openHelpWindow('http://ibmtvdemo.edgesuite.net/software/lotus/uxid/connections/homepage45/homepage_demo.html'); return false;" class="">Demo</a></li><li><a href="javascript:;" onclick="javascript:openHelpWindow(helpLink); return false;" class="">Hilfe</a></li><li><a href="http://www-10.lotus.com/ldd/lcforum.nsf">IBM Unterstützungsforen</a></li> <li><a href="/homepage/web/toolsHomepage.jsp" class="">Tools zum Setzen von Lesezeichen</a></li><li id="lotusBannerFooterMetrics" style="display:none"><a class="lotusMetricsReaderLink" href="https://connections.pedersenandpartners.com:9444/metrics/">Serverkennzahlen</a></li><li id="lconnFooterMobile" class="lotusHidden"><a id="lconnMobileRedirectLink" href="javascript:;">Mobile Benutzerschnittstelle</a></li><li><a href="/homepage/web/jsp/about.jsp" class="">Über</a></li><li><a href="http://www.pedersenandpartners.com">Pedersen &amp; Partners on the web</a></li><li><a href="http://www.lotus.com/ldd/doc/cct/nextgen.nsf/feedback_choice?OpenForm&amp;Context=footer+ventura+NoTitle+4.5">Feedback übergeben</a></li></ul><script type="text/javascript">
+      dojo.require("lconn.core.header.apps");
+      dojo.require("lconn.core.auth");
+
+    </script><script type="text/javascript">
+         dojo.addOnLoad(function(){
+            lconn.core.header.apps.updateLoginRegion();
+            lconn.core.header.apps.updateBannerByRoles();
+         });
+       </script>
+ 
+</div>
+</div>
+<span widgetid="lconnheadermenu-apps" style="display: none;"></span><div class="dijitPopup" role="presentation" id="lotusBannerApps_dropdown" dijitpopupparent="lotusBannerApps" style="top: -9999px; visibility: hidden;"></div><div class="lcSharebox lotusTabDialog dijitDialog lotusDialog dijitContentPane" tabindex="-1" wairole="dialog" waistate="labelledby-com_ibm_social_sharebox_controls__ShareboxDialog_0_title" role="dialog" aria-labelledby="com_ibm_social_sharebox_controls__ShareboxDialog_0_title" id="com_ibm_social_sharebox_controls__ShareboxDialog_0" widgetid="com_ibm_social_sharebox_controls__ShareboxDialog_0" style="display: none; position: absolute; left: 929px; top: 100px;" title=""> <div class="lotusDialogBorder"> <div class="dijitDialogTitleBar lotusDialogHeader" dojoattachpoint="titleBar" title="Teilen"> <span class="dijitDialogTitle" dojoattachpoint="titleNode" id="com_ibm_social_sharebox_controls__ShareboxDialog_0_title" role="presentation">Teilen</span> <span title="Abbrechen" dojoattachevent="onclick: closeDialog, onmouseenter: _onCloseEnter, onmouseleave: _onCloseLeave" role="button" class="lotusDialogClose" dojoattachpoint="closeButtonNode"> <img alt="Abbrechen" role="presentation" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043"> <span class="lotusAltText">X</span> </span> </div> <div dojoattachpoint="containerNode" class="dijitDialogPaneContent lotusui30 lotusTabDialog"> <div class="shareMessage" dojoattachpoint="messageBar" style="display:none;"></div> <div class="dijitTabContainer shareTabContainer dijitContainer dijitTabContainerTop dijitLayoutContainer dijitTabContainerNoLayout tabStrip-enabled" id="com_ibm_social_sharebox_controls_TabContainer_0" widgetid="com_ibm_social_sharebox_controls_TabContainer_0">
+	<div class="dijitTabListContainer-top" style="visibility: visible;" id="com_ibm_social_sharebox_controls_TabContainer_0_tablist" widgetid="com_ibm_social_sharebox_controls_TabContainer_0_tablist" role="tablist">
+	<div id="dijit_layout__ScrollingTabControllerButton_0-menuBtn" class="tabStripButton dijitTab tabStripMenuButton tabStripButton-top" dojoattachevent="onclick:_onButtonClick,onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" widgetid="dijit_layout__ScrollingTabControllerButton_0" style="display: none;">
+	<div role="presentation" wairole="presentation" class="dijitTabInnerDiv" dojoattachpoint="innerDiv,focusNode" id="dijit_layout__ScrollingTabControllerButton_0">
+		<div role="presentation" wairole="presentation" class="dijitTabContent dijitButtonContents" dojoattachpoint="tabContent">
+			<img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043">
+			<span dojoattachpoint="containerNode,titleNode" class="dijitButtonText dijitDisplayNone" title="↓">↓</span>
+		</div>
+	</div>
+</div>
+	<div id="dijit_layout__ScrollingTabControllerButton_1-leftBtn" class="tabStripButton dijitTab tabStripSlideButtonLeft tabStripButton-top" dojoattachevent="onclick:_onButtonClick,onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" widgetid="dijit_layout__ScrollingTabControllerButton_1" style="display: none;">
+	<div role="presentation" wairole="presentation" class="dijitTabInnerDiv" dojoattachpoint="innerDiv,focusNode" id="dijit_layout__ScrollingTabControllerButton_1">
+		<div role="presentation" wairole="presentation" class="dijitTabContent dijitButtonContents" dojoattachpoint="tabContent">
+			<img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043">
+			<span dojoattachpoint="containerNode,titleNode" class="dijitButtonText dijitDisplayNone" title="←">←</span>
+		</div>
+	</div>
+</div>
+	<div id="dijit_layout__ScrollingTabControllerButton_2-rightBtn" class="tabStripButton dijitTab tabStripSlideButtonRight tabStripButton-top" dojoattachevent="onclick:_onButtonClick,onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" widgetid="dijit_layout__ScrollingTabControllerButton_2" style="display: none;">
+	<div role="presentation" wairole="presentation" class="dijitTabInnerDiv" dojoattachpoint="innerDiv,focusNode" id="dijit_layout__ScrollingTabControllerButton_2">
+		<div role="presentation" wairole="presentation" class="dijitTabContent dijitButtonContents" dojoattachpoint="tabContent">
+			<img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043">
+			<span dojoattachpoint="containerNode,titleNode" class="dijitButtonText dijitDisplayNone" title="→">→</span>
+		</div>
+	</div>
+</div>
+	<div class="dijitTabListWrapper dijitTabContainerTopStrip" dojoattachpoint="tablistWrapper">
+		<div wairole="tablist" dojoattachevent="onkeypress:onkeypress" dojoattachpoint="containerNode" class="nowrapTabStrip dijitTabContainerTop-tabs dijitTabNoLayout" role="tablist" style="width: 50400px;"><div wairole="presentation" dojoattachpoint="titleNode" dojoattachevent="onclick:onClick,onmouseenter:_onMouse,onmouseleave:_onMouse" role="presentation" widgetid="com_ibm_social_sharebox_controls_TabContainer_0_tablist_com_ibm_social_sharebox_controls_GadgetContentPane_1" class=" dijitTab dijitTabChecked dijitChecked">
+    <div wairole="presentation" class="dijitTabInnerDiv" dojoattachpoint="innerDiv" role="presentation">
+        <div wairole="presentation" class="dijitTabContent" dojoattachpoint="tabContent,focusNode" role="tab" id="com_ibm_social_sharebox_controls_TabContainer_0_tablist_com_ibm_social_sharebox_controls_GadgetContentPane_1" tabindex="0" title="Statusaktualisierung veröffentlichen" aria-selected="true">
+	        <img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" dojoattachpoint="iconNode" wairole="presentation" role="presentation" class="dijitTabButtonIcon" style="width: 1px;">
+	        <span dojoattachpoint="containerNode" class="tabLabel">    Statusaktualisierung  </span>
+	        <span class="closeButton" dojoattachpoint="closeNode" dojoattachevent="onclick: onClickCloseButton, onmouseenter: _onCloseButtonEnter, onmouseleave: _onCloseButtonLeave" style="display: none;">
+	        	<img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" dojoattachpoint="closeIcon" class="closeImage" wairole="presentation" role="presentation">
+	            <span dojoattachpoint="closeText" class="closeText">x</span>
+	        </span>
+        </div>
+    </div>
+</div>
+		<div wairole="presentation" dojoattachpoint="titleNode" dojoattachevent="onclick:onClick,onmouseenter:_onMouse,onmouseleave:_onMouse" role="presentation" widgetid="com_ibm_social_sharebox_controls_TabContainer_0_tablist_com_ibm_social_sharebox_controls_GadgetContentPane_0" class=" dijitTab">
+    <div wairole="presentation" class="dijitTabInnerDiv" dojoattachpoint="innerDiv" role="presentation">
+        <div wairole="presentation" class="dijitTabContent" dojoattachpoint="tabContent,focusNode" role="tab" id="com_ibm_social_sharebox_controls_TabContainer_0_tablist_com_ibm_social_sharebox_controls_GadgetContentPane_0" tabindex="-1" title="Dateien hochladen und teilen" aria-selected="false">
+	        <img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" dojoattachpoint="iconNode" wairole="presentation" role="presentation" class="dijitTabButtonIcon" style="width: 1px;">
+	        <span dojoattachpoint="containerNode" class="tabLabel">Dateien</span>
+	        <span class="closeButton" dojoattachpoint="closeNode" dojoattachevent="onclick: onClickCloseButton, onmouseenter: _onCloseButtonEnter, onmouseleave: _onCloseButtonLeave" style="display: none;">
+	        	<img src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" dojoattachpoint="closeIcon" class="closeImage" wairole="presentation" role="presentation">
+	            <span dojoattachpoint="closeText" class="closeText">x</span>
+	        </span>
+        </div>
+    </div>
+</div></div>
+	</div>
+</div>
+	<div dojoattachpoint="tablistSpacer" class="dijitTabSpacer dijitTabContainerTop-spacer"></div>
+	<div class="dijitTabPaneWrapper dijitTabContainerTop-container" dojoattachpoint="containerNode" role="tabpanel" aria-labelledby="com_ibm_social_sharebox_controls_TabContainer_0_tablist_com_ibm_social_sharebox_controls_GadgetContentPane_1"><div id="com_ibm_social_sharebox_controls_GadgetContentPane_1" widgetid="com_ibm_social_sharebox_controls_GadgetContentPane_1" title="" role="group" class="dijitContentPane dijitTabPane dijitTabContainerTop-child dijitTabContainerTop-dijitContentPane dijitVisible"> <div dojoattachpoint="containerNode"> <div dojoattachpoint="loadingDiv" style="display: none;"><table class="eeLoadingCtnr"><tbody><tr><td><div class="lotusLoading"></div></td><td><span class="lotusAltText">Ladevorgang läuft...</span></td></tr></tbody></table></div> <div dojoattachpoint="gadgetDiv" style=""><div dojoattachpoint="gadgetNode" id="gadget_1ffd3ba4-71a9-4891-803f-e2ce7abd4432"><iframe id="__gadget_gadget_1ffd3ba4-71a9-4891-803f-e2ce7abd4432" name="__gadget_gadget_1ffd3ba4-71a9-4891-803f-e2ce7abd4432" src="//connections.pedersenandpartners.com:9444/connections/opensocial/gadgets/ifr?url=https%3A%2F%2Fconnections.pedersenandpartners.com%3A9444%2Fconnections%2Fresources%2Fweb%2Flconn.news.microblogging.sharebox%2FglobalMicrobloggingForm.xml&amp;container=default&amp;view=default&amp;lang=de&amp;country=DE&amp;debug=0&amp;nocache=0&amp;sanitize=0&amp;v=ab8a5449b8044fa7e7aa99065a1f01f3&amp;st=default%3A4sLgrBRFjnZcrBsp_WpM3oc4XqY3IGd9yOTUDpDepX9mr1m8UwEZ9c-ZqHe2yZnLgEvZzgyFOS-Xd9JZqhZEcOAjJtlreg8xW4MMSV6tionSvPH6NmOPMZ0WUj_XokupWiGzcqXwdupZRx_adfG65NEppiiThRGz4qgs_QaGZXW5HDZQAB4W-CHeWwHB_bgR0UViN512SLh5g0_rHg0FauqaN3OZr1RkTZnGM3T8WiiU9WfR3t0RqxiytQCb1hTpZEn9EmSeFG5byJciDNIBpx3340_XWdeQ1Ue-JLC9iEDG9PYpttvlVEsypyHJFX-GJRgF-q9Zgu8Qo56W2IXQcQ&amp;testmode=0&amp;parent=https%3A%2F%2Fconnections.pedersenandpartners.com%3A9444&amp;mid=0#up_maxNumberChars=1000&amp;up_com.ibm.connections.ublog.AtMentionsEnabled=false&amp;view-params=%7B%22lang%22%3A%22de%22%2C%22country%22%3A%22DE%22%2C%22dir%22%3A%22ltr%22%2C%22locale%22%3A%22de-de%22%7D&amp;rpctoken=728697200&amp;embeddedlevel=0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" height="auto" width="500px" onload="window.__gadgetOnLoad('https://connections.pedersenandpartners.com:9444/connections/resources/web/lconn.news.microblogging.sharebox/globalMicrobloggingForm.xml', 'gadget_1ffd3ba4-71a9-4891-803f-e2ce7abd4432');" title="Abschnitt 'Statusaktualisierung'" role="presentation" tabindex="0" style="height: 272px;"></iframe></div></div> </div></div><div id="com_ibm_social_sharebox_controls_GadgetContentPane_0" widgetid="com_ibm_social_sharebox_controls_GadgetContentPane_0" title="" role="group" class="dijitContentPane dijitTabPane dijitTabContainerTop-child dijitTabContainerTop-dijitContentPane dijitHidden"> <div dojoattachpoint="containerNode"> <div dojoattachpoint="loadingDiv"></div> <div dojoattachpoint="gadgetDiv" style="display:none"><div dojoattachpoint="gadgetNode"></div></div> </div></div></div>
+</div> </div> <a role="button" class="shareBackTopHidden" href="javascript:;" dojoattachpoint="backToTopLink" title="Durch Aktivieren dieses Links wird der Fokus an den Seitenanfang des Dialogfensters zurück versetzt.">Zum Seitenanfang.</a> </div></div><div wairole="presentation" role="presentation" id="lconnheadermenu-apps" class="lotusNavMenu dijitTooltipABLeft" widgetid="lconnheadermenu-apps" title="" style="top: -9999px; visibility: hidden; position: absolute;" aria-hidden="true">
+	<div class="dijitTooltipContainer" wairole="presentation" role="presentation">
+		<div class="dijitTooltipContents dijitTooltipFocusNode" dojoattachpoint="containerNode" tabindex="-1" wairole="dialog" role="dialog" title="" aria-label="Anwendungen"><div role="document"><table class="lotusLayout lotusNavMenuLarge" cellpadding="0" cellspacing="0"><tbody><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite" src="/projexec/tgweb20/media/projexec_blue.gif" alt="" role="presentation"><a href="#" onclick="function prepareTitleBar(e){var t=dojo.query('.lotusTitleBar2');t.addClass('lotusTitleBar2Tabs');t.html('&lt;div class=&quot;lotusWrapper&quot;&gt;&lt;div class=&quot;lotusInner&quot;&gt;&lt;div class=&quot;lotusTitleBarContent&quot;&gt;&lt;h2 class=&quot;lotusHeading&quot;&gt;'+e+'&lt;/h2&gt;&lt;div&gt;&lt;ul class=&quot;lotusNavTabs&quot;&gt;&lt;/ul&gt;&lt;div class=&quot;lotusClear&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;')};function addTab(e,t,n){dojo.create('li',
+{innerHTML:'&lt;div class=&quot;lotusTabWrapper&quot;&gt;&lt;a onclick=&quot;return false&quot; class=&quot;lotusTab&quot; href=&quot;'+t+'&quot;&gt;&lt;span class=&quot;lotusTabInner&quot;&gt;'+e+'&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;','class':n?'lotusSelected':''},dojo.query('.lotusTitleBar2 .lotusNavTabs')[0])};prepareTitleBar('CRM Apps');addTab('Executive','https://development.pedersenandpartners.com/exec.nsf',true);addTab('Company','https://development.pedersenandpartners.com/Company.nsf',false);addTab('Assignments','https://development.pedersenandpartners.com/ADB/assignments.nsf',false);addTab('Business Development','https://development.pedersenandpartners.com/pedersenandpartners/busdev.nsf',false);addTab('Revenues, Salaries &amp; KPIs','https://development.pedersenandpartners.com/ADB/revenues.nsf',false);dojo.byId('lotusMain').innerHTML='&lt;iframe src=&quot;https://development.pedersenandpartners.com/exec.nsf&quot; id=&quot;crmframe&quot;width=&quot;100%&quot; height=&quot;750&quot; frameborder=&quot;0&quot;/&gt;';dojo.query('.lotusNavTabs li').connect('onclick', function(){dojo.query('.lotusSelected').removeClass('lotusSelected'); this.setAttribute('class','lotusSelected'); dojo.attr('crmframe','src', this.firstChild.firstChild.getAttribute('href'))});return false;"><strong>CRM Apps</strong></a></th><td class="lotusNowrap" colspan="2"><span style="font-weight:bold;color:red;">(Development testing)</span></td></tr><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite" src="/projexec/tgweb20/media/projexec_blue.gif" alt="" role="presentation"><a href="/projexec/projexec/pe_main.xsp"><strong>Projects</strong></a></th><td class="lotusNowrap"><a href="/projexec/projexec/pe_main.xsp?pepage=myprojects">My Projects</a></td><td class="lotusNowrap lotusLastCell"><a href="/projexec/projexec/pe_main.xsp?pepage=myportfolios">My Portfolios</a></td></tr><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite lconnSprite-iconActivitiesBlue16" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" role="presentation"><a href="https://connections.pedersenandpartners.com:9444/activities/service/html/mainpage"><strong>Aktivitäten</strong></a></th><td class="lotusNowrap"><a href="https://connections.pedersenandpartners.com:9444/activities/service/html/mainpage#todolist">Aufgabenliste</a></td><td class="lotusNowrap lotusLastCell"><a href="https://connections.pedersenandpartners.com:9444/activities/service/html/mainpage#dashboard,highpriority">Aktivitäten mit hoher Priorität</a></td></tr><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite lconnSprite-iconBlogsBlue16" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" role="presentation"><a href="https://connections.pedersenandpartners.com:9444/blogs/"><strong>Blogs</strong></a></th><td class="lotusNowrap"><a href="https://connections.pedersenandpartners.com:9444/blogs/roller-ui/homepage">Neueste Einträge</a></td><td class="lotusNowrap lotusLastCell"><a href="https://connections.pedersenandpartners.com:9444/blogs/roller-ui/allblogs">Liste öffentlicher Blogs</a></td></tr><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite lconnSprite-iconBookmarksBlue16" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" role="presentation"><a href="https://connections.pedersenandpartners.com:9444/dogear/"><strong>Lesezeichen</strong></a></th><td class="lotusNowrap"><a href="https://connections.pedersenandpartners.com:9444/dogear/html/popular">Beliebte</a></td><td class="lotusNowrap lotusLastCell"><a href="https://connections.pedersenandpartners.com:9444/dogear/html">Öffentliche Lesezeichen</a></td></tr><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite lconnSprite-iconFilesBlue16" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" role="presentation"><a href="https://connections.pedersenandpartners.com:9444/files/app"><strong>Dateien</strong></a></th><td class="lotusNowrap"><a href="https://connections.pedersenandpartners.com:9444/files/app#/shares?pivot=withme">Mit mir geteilt</a></td><td class="lotusNowrap lotusLastCell"><a href="https://connections.pedersenandpartners.com:9444/files/app#/folders/pinned">Gepinnte Ordner</a></td></tr><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite lconnSprite-iconForumsBlue16" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" role="presentation"><a href="https://connections.pedersenandpartners.com:9444/forums/"><strong>Foren</strong></a></th><td class="lotusNowrap"><a href="https://connections.pedersenandpartners.com:9444/forums/html/my?view=owner">Ich bin Eigentümer</a></td><td class="lotusNowrap lotusLastCell"><a href="https://connections.pedersenandpartners.com:9444/forums/html/public">Öffentliche Foren</a></td></tr><tr><th scope="row" class="lotusNowrap"><img class="lconnSprite lconnSprite-iconWikisBlue16" src="https://connections.pedersenandpartners.com:9444/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20130828.201043" alt="" role="presentation"><a href="https://connections.pedersenandpartners.com:9444/wikis/"><strong>Wikis</strong></a></th><td class="lotusNowrap"><a href="https://connections.pedersenandpartners.com:9444/wikis/home/mywikis?role=owner">Ich bin Eigentümer</a></td><td class="lotusNowrap lotusLastCell"><a href="https://connections.pedersenandpartners.com:9444/wikis/home/public">Öffentliche Wikis</a></td></tr></tbody></table></div>
+</div>
+	</div>
+	<div class="dijitTooltipConnector" wairole="presentation" role="presentation"></div>
+</div></body></html>
