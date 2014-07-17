@@ -276,7 +276,8 @@ a.lotusScope {
 
     bottom: 0;
     // box-shadow: -1px 0 0 #404749 inset;
-    box-shadow: -1px 0 0 darken($sidebargray, 10%) inset, 2px 0 3px 0 darken($sidebargray, 5%); 
+    // box-shadow: -1px 0 0 darken($sidebargray, 10%) inset, 2px 0 3px 0 darken($sidebargray, 5%); 
+    box-shadow: -1px 0 0 $sidebargray inset, 2px 0 3px 0 darken($sidebargray, 5%); 
     content: "";
     height: 100%;
     margin-left: -1001px;
@@ -463,8 +464,11 @@ background-position: -384px 0; //-416px 0;
 //===========================================================
 // Widgets
 
-
-.lotusui30 .lotusSection2 .lotusHeading a, .lotusui30 .lotusSection h2 a, .lotusui30 .lotusWidget h2 a, .lotusui30 .lotusWidget2 h2 a
+// Headings
+.lotusui30 .lotusSection2 .lotusHeading a, 
+.lotusui30 .lotusSection h2 a, 
+.lotusui30 .lotusWidget h2 a, 
+.lotusui30 .lotusWidget2 h2 a
 {
 	@extend %heading;
 	&:hover {
@@ -472,18 +476,21 @@ background-position: -384px 0; //-416px 0;
 		outline: none;
 	}
 }
+.lotusui .lotusHeading1 {
+	@extend %heading;
+}
 
 .lotusui30 .lotusContent {
  .lotusSection h2, 
  .lotusWidget h2, 
  .lotusWidget2 h2, 
  .dijitTitlePaneTitle,
- .lotusHeader h1
+ .lotusHeader h1,
+ .gettingStartedHeader > .gettingStartedCheckboxContainer
   {
   	@extend %headingborder;
   }
 }
-
 
 // other pages headers
 .lotusui30 .lotusMain .lotusBoard .lotusHeader a.asHeaderLink,
@@ -503,7 +510,12 @@ background-position: -384px 0; //-416px 0;
 	}
 }
 
-.lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1
+#activityStreamHeader {
+	margin-top: -3px;
+}
+
+.lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1,
+ .gettingStartedHeader > .gettingStartedCheckboxContainer
  {
 	padding-bottom: 12px;
 	padding-bottom: .75rem;
@@ -618,6 +630,37 @@ background-position: -384px 0; //-416px 0;
 	}
 }
 
+// alert warning fehlermeldung
+
+.lotusui30 .lotusMessage2 {
+	margin-top: 8px;
+	margin-top: .5rem;
+	// background-color: #ffebe6;
+	background-color: #fee3e3;
+  border-color: #e37b7d;
+  border-width: 2px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  padding: 10px;
+  img {
+  	display: none;
+  }
+}
+
+.lotusui30 .lotusIconLike, 
+.lotusui30 .lotusIconMsgSuccess, 
+.lotusui30 .lotusIconMsgError, 
+.lotusui30 .lotusIconMsgInfo, 
+.lotusui30 .lotusIconMsgWarning {
+	background: none;
+}
+
+.lotusui30 .lotusMessage2 .lotusMessageBody {
+	margin-left: 0 !important;
+	color: #c90211;
+	font-weight: bold;
+}
+
 // END widgets
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -724,6 +767,10 @@ background-position: -384px 0; //-416px 0;
 	background: white;
 }
 
+.lotusui30 .lotusTabs a {
+	text-decoration: none !important;
+}
+
 
 // TABS end
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -774,7 +821,12 @@ body.xsp {
 	text-shadow: none !important;
 }
 
-.lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton // Apps buttons
+.lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton, // Apps buttons
+.lotusui30 span.lotusBtn a, 
+.lotusui30 span.lotusBtn a:visited, 
+.lotusui30 span.lotusBtn a:hover, 
+.lotusui30 span.lotusBtn a:focus, 
+.lotusui30 span.lotusBtn a:active // Community starten
 {
 	@include border-radius(6px);
 }
@@ -785,6 +837,19 @@ body.xsp {
 .lotusui30 span.lotusBtn a:focus, 
 .lotusui30 span.lotusBtn a:active {
 	text-decoration: none !important;
+}
+
+.lotusui30 .lotusActionBar {
+	height: 3em;
+}
+
+.lotusui30 span.lotusBtn a, 
+.lotusui30 span.lotusBtn a:visited, 
+.lotusui30 span.lotusBtn a:hover, 
+.lotusui30 span.lotusBtn a:focus, 
+.lotusui30 span.lotusBtn a:active // Community starten
+{
+	box-shadow: none !important;
 }
 
 
@@ -830,7 +895,8 @@ table div,
 
 // Sidebar Apps
 
-.xsp .lotusColLeft {
+.xsp .lotusColLeft,
+.lotusui .lotusColLeft {
 	// background-color: $sidebargray !important;
 	// box-shadow: -1px 0 0 darken($sidebargray, 10%) inset, 2px 0 3px 0 darken($sidebargray, 5%); 
 
