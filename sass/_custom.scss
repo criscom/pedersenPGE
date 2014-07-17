@@ -160,6 +160,13 @@ body,
 
 // BUTTON stylings
 
+
+input.lotusBtn, button.lotusBtn {
+	margin-left: 0 !important;
+	margin-right: 10px;
+	margin-right: .625rem;
+}
+
 .lotusui30 .lotusBanner ul.lotusInlinelist li a.lotusBannerBtn // Share button
 {
 	@extend %button;
@@ -940,6 +947,56 @@ table div,
 }
 
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Search executives
+///
+
+table.searchCriteria {
+	width: 100%;
+	margin-bottom: 17px !important;
+	td.basicCriteria {
+		width: 75%;
+		>input {
+			width: 95% !important;
+		}
+		label.xspCheckBox input {
+			width: 20px !important;
+		}
+	}
+	td.advancedCriteria {
+		width: 25%;
+	}
+}
+
+table.searchCriteria td select {
+	color: $gray !important;
+}
+
+td.basicCriteria {
+	label {
+		color: $gray !important;
+	}
+}
+
+td.advancedCriteria {
+	a {
+		display: block;
+		border-bottom: 1px solid $bordergray;
+		padding: 10px 0;
+		color: $blue;
+		font-size: 14px;
+		margin-right: 12px;
+		margin-right: .75rem;
+		padding-left: 15px;
+		background-image: url("img/arrow.png");
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 5px 6px;
+	}
+	a.last{
+		border-bottom: 0;
+		}
+}
 
 // Executive table
 ///
