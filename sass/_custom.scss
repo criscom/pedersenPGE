@@ -1007,11 +1007,20 @@ table.xspDataTable {
 	margin-top: 1rem !important;
 	margin-bottom: 12px !important;
 	margin-bottom: .75rem !important;
-
-
+	td.notesViewBold {
+		input {
+			float: left;
+			margin-top: 2px !important;
+		}
+		a {
+			text-align: left;
+			margin-left: -6px;
+		}
+	}
 }
 
 // Filter on top of table
+
 
 table.xspDataTable>thead>tr {
 // border-radius doesn't work on tr

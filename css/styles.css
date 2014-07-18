@@ -974,8 +974,18 @@ table.xspDataTable {
   margin-bottom: 12px !important;
   margin-bottom: .75rem !important;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031011}}
+table.xspDataTable td.notesViewBold input {
+  float: left;
+  margin-top: 2px !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031015}}
+table.xspDataTable td.notesViewBold a {
+  text-align: left;
+  margin-left: -6px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031016}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031025}}
 table.xspDataTable > thead > tr {
   height: 28px;
   border-color: #cccccc !important;
@@ -988,37 +998,37 @@ table.xspDataTable > thead > tr {
   background-image: -o-linear-gradient(#fefefe, #f3f3f3);
   background-image: linear-gradient(#fefefe, #f3f3f3);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031024}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031033}}
 table.xspDataTable > thead > tr th div span {
   color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031042}}
 .xspDataTable tbody tr td {
   border-color: #cccccc !important;
   height: 36px !important;
   height: 2.25rem !important;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031047}}
 .xspDataTable tbody tr td span {
   color: #777777 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031048}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031057}}
 input.xspInputFieldEditBox {
   height: 24px;
   height: 1.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031054}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031063}}
 table button {
   margin-left: 8px;
   margin-left: .75rem;
   box-shadow: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031069}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031078}}
 .xspDataTableViewPanelHeaderStart,
 .xspDataTableViewPanelHeaderMiddle,
 .xspDataTableViewPanelHeaderEnd {
@@ -1030,7 +1040,7 @@ table button {
   background-image: linear-gradient(#fefefe, #f3f3f3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031081}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031090}}
 table.xspDataTableViewPanel tr > td.xspDataTableViewPanelHeaderMiddle > table,
 table.xspDataTableViewPanel tr > td.xspDataTableViewPanelFooterMiddle > table {
   margin-top: 0px;
@@ -1038,7 +1048,7 @@ table.xspDataTableViewPanel tr > td.xspDataTableViewPanelFooterMiddle > table {
   margin-bottom: .25rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031094}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031103}}
 .lotusui30 .lotusFooter ul {
   background: white;
 }
