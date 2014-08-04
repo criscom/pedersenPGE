@@ -89,7 +89,8 @@ body,
 
 .lotusui30 .lotusBanner {
 	background: $yellow;
-	border-bottom: 3px solid $yellow !important;
+	// border-bottom: 3px solid $yellow !important;
+	border-bottom: 4px solid $yellow !important;
 	// height: 50px;
 	>.lotusRightCorner {
 		border-bottom: 1px solid $yellow !important;
@@ -235,7 +236,7 @@ a.lotusScope {
 
 .lotusui30 div.lotusTitleBar2 .lotusSearch, 
 .lotusui30 div.lotusTitleBar .lotusSearch {
-	top: 17px;
+	top: 18px;
 }
 
 
