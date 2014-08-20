@@ -88,15 +88,16 @@ body,
 }
 
 .lotusui30 .lotusBanner {
-	background: $yellow;
+	background: $blue;
 	// border-bottom: 3px solid $yellow !important;
-	border-bottom: 4px solid $yellow !important;
-	// height: 50px;
+	border-bottom: 8px solid $yellow !important;
+	height: 50px;
 	>.lotusRightCorner {
-		border-bottom: 1px solid $yellow !important;
+		// border-bottom: 1px solid $yellow !important;
 		background: $blue !important;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003465', endColorstr='#003465', GradientType=0) !important; // For IE9
 		color: white !important;
+		padding-top: 4px;
 	}
 }
 
@@ -122,6 +123,7 @@ body,
 	// box-shadow: 0 0 6px #000 inset;
 	// box-shadow:  0 0 6px #fff inset, 0 0 -6px #fff inset;
 	box-shadow: 2px 0 2px -2px #fff inset, -2px 0 2px -2px #fff inset;
+	padding-bottom: 22px;
 }
 
 .lotusui30 .lotusBanner ul.lotusInlinelist li a:hover, 
@@ -150,6 +152,15 @@ body,
 .lotusui30 div.lotusBanner ul.lotusUtility li a {
 	color: white !important;
 	text-decoration: none !important;
+}
+
+.lotusMeta a {
+	color: $blue !important;
+	text-decoration: underline;
+	&:hover {
+		color: $blue !important;
+		text-decoration: none;
+	}
 }
 
 // Username next to share button
@@ -223,6 +234,10 @@ input.lotusBtn, button.lotusBtn {
 
 a.lotusScope {
 	text-decoration: none !important
+}
+
+.lotusui30 .lotusTitleBar2 .lotusTitleBarContent {
+	margin-right: 0 !important;
 }
 
 
@@ -487,7 +502,9 @@ background-position: -384px 0; //-416px 0;
 .lotusui30 .lotusSection2 .lotusHeading a, 
 .lotusui30 .lotusSection h2 a, 
 .lotusui30 .lotusWidget h2 a, 
-.lotusui30 .lotusWidget2 h2 a
+.lotusui30 .lotusWidget2 h2 a,
+#gettingStartedTitle,
+.lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1 a
 {
 	@extend %heading;
 	&:hover {
@@ -495,6 +512,8 @@ background-position: -384px 0; //-416px 0;
 		outline: none;
 	}
 }
+
+.dijitTitlePaneTitle .dijitTitlePaneTextNode,
 .lotusui .lotusHeading1 {
 	@extend %heading;
 }
@@ -505,11 +524,28 @@ background-position: -384px 0; //-416px 0;
  .lotusWidget2 h2, 
  .dijitTitlePaneTitle,
  .lotusHeader h1,
- .gettingStartedHeader > .gettingStartedCheckboxContainer
+ .gettingStartedHeader > div:nth-child(1)
   {
   	@extend %headingborder;
   }
 }
+
+.lotusui30 .lotusColRight .lotusSection2 .lotusHeading, 
+.lotusui30 .lotusColRight .lotusSection2 .lotusHeading2 {
+	@extend %headingborder;
+}
+
+.lotusui30 .lotusContent .dijitTitlePaneTitle.dijitClosed {
+	border-bottom: 0 !important;
+}
+
+ .gettingStartedHeader > div:nth-child(1) {
+ 	padding-bottom: 9px;
+ }
+
+ .gettingStartedCheckboxContainer {
+ 	margin-top: 16px !important;
+ }
 
 // other pages headers
 .lotusui30 .lotusMain .lotusBoard .lotusHeader a.asHeaderLink,
@@ -666,6 +702,11 @@ background-position: -384px 0; //-416px 0;
   }
 }
 
+.lotusui30 .lotusSection2 {
+	margin-top: 8px !important;
+	margin-top: .5rem !important;
+}
+
 .lotusui30 .lotusIconLike, 
 .lotusui30 .lotusIconMsgSuccess, 
 .lotusui30 .lotusIconMsgError, 
@@ -730,6 +771,12 @@ background-position: -384px 0; //-416px 0;
 	text-decoration: none !important;
 }
 
+@media only screen and (max-width: 960px) {
+	.lotusui30 .lotusTitleBar2 .lotusTitleBarContent .lotusNavTabs li a {
+		// font-size: 10px !important;
+	}
+}
+
 .lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
 	border: none;
 }
@@ -788,6 +835,12 @@ background-position: -384px 0; //-416px 0;
 
 .lotusui30 .lotusTabs a {
 	text-decoration: none !important;
+	text-shadow: none !important;
+}
+
+.lotusui30 .lotusMenu a,
+.lotusui30 .lotusMenu .lotusMenuSubsection li a {
+	text-shadow: none !important;
 }
 
 
@@ -797,9 +850,9 @@ background-position: -384px 0; //-416px 0;
 
 .lotusPlaceBar h2 {
 	color: $blue !important;
-	font-weight: 100 !important;
-	font-size: 28px;
-	font-style: 1.75rem;
+	font-weight: 300 !important;
+	font-size: 24px;
+	font-style: 1.5rem;
 }
 
 //===========================================================
@@ -848,6 +901,20 @@ body.xsp {
 .lotusui30 span.lotusBtn a:active // Community starten
 {
 	@include border-radius(6px);
+}
+
+button.lotusBtn {
+	 -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  -ms-border-radius: 6px !important;
+  -o-border-radius: 6px !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  color: white !important;
+}
+
+.lotusBtn a {
+	color: white !important;
 }
 
 .lotusui30 span.lotusBtn a, 
@@ -1015,8 +1082,9 @@ td.advancedCriteria {
 
 table.xspDataTable {
 
-	margin-top: 16px !important;
-	margin-top: 1rem !important;
+	// margin-top: 16px !important;
+	// margin-top: 1rem !important;
+	margin-top: 0;
 	margin-bottom: 12px !important;
 	margin-bottom: .75rem !important;
 	td.notesViewBold {
@@ -1031,6 +1099,15 @@ table.xspDataTable {
 	}
 }
 
+
+// Number of results to display: 	
+
+
+.xspComboBox {
+	height: 28px;
+}
+
+
 // Filter on top of table
 
 
@@ -1043,10 +1120,9 @@ table.xspDataTable>thead>tr {
 	border-left: 1px solid $bordergray;
 	@include background-image(linear-gradient(#fefefe, #f3f3f3));
 	th div span {
-		color: $darkgray;
+		color: $gray;
 	}
 }
-
 
 // table rows border color
 
@@ -1066,10 +1142,41 @@ table.xspDataTable>thead>tr {
 }
 
 
-input.xspInputFieldEditBox {
-	height: 24px;
-	height: 1.5rem;
+input.xspInputFieldEditBox,
+.tundra .dijitInputField input
+{
+	height: 24px !important;
+	height: 1.5rem !important;
+	margin-right: 8px !important;
+	margin-right: .5rem !important;
 }
+
+.company-filter {
+	margin-top: 16px;
+		div.dijitReset {
+		height: 26px; // 19.08.2014 criscom
+		height: 1.625rem !important;
+		// margin-top: .1875rem;
+		// margin-top: 3px;
+		// margin-right: 8px !important;
+		// margin-right: .5rem !important;
+		input {
+			margin-top: 0 !important;
+			margin-right: 0 !important;
+			height: 26px !important;
+		}
+	}
+	button.lotusBtn {
+		margin-left: 8px !important;
+		margin-left: .5rem !important;
+		}
+}
+
+.xspInputFieldEditBox {
+	margin-top: 0 !important;
+}
+
+
 // Find Clear
 
 table button {
@@ -1090,6 +1197,7 @@ table button {
 {
 	border-color: $bordergray !important;
 	@include background-image(linear-gradient(#fefefe, #f3f3f3));
+	display: none; // hiding the pager
 }
 
 .xspPagerContainer a {
@@ -1106,6 +1214,59 @@ table.xspDataTableViewPanel {
 	}
 }
 
+// Collapse Expand all
+
+.lotusui .lotusInlinelist {
+	// margin-top: 16px !important;
+	// margin-bottom: 12px !important;
+}
+
+
+// business development / business-development
+
+h2.business-development-header {
+	margin-top: 16px;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 5px !important;
+	text-align: left;
+}
+
+.business-development {
+	td span ul.lotusInlinelist {
+	margin-bottom: 10px !important;
+	}
+	table[role="presentation"] {
+		// width: 100%;
+	}
+	table.xspDataTableViewPanel {
+		width: 98%;
+	}
+	table.xspDataTable {
+		margin-left: 0 !important;
+	}
+}
+
+// databases setting all tables to width = 100 %
+
+table.xspDataTableViewPanel {
+	width: 100%;
+}
+
+h4>span {
+	color: $blue;
+	// font-size: 16px;
+}
+
+// activities
+
+.dijitTitlePaneContentOuter .dijitReset {
+	margin-right: 0 !important;
+}
+
+.lotusui30 .lotusTwistyClosed {
+	margin-top: 8px; // positioning the > image before the headings EBD, CDB
+}
 
 //===========================================================
 // footer

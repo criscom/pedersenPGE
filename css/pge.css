@@ -10,11 +10,14 @@
 .lotusui30 .lotusSection2 .lotusHeading a,
 .lotusui30 .lotusSection h2 a,
 .lotusui30 .lotusWidget h2 a,
-.lotusui30 .lotusWidget2 h2 a, .lotusui .lotusHeading1, .lotusPlaceBar h2, .xsp .lotusForm .lotusContent h2 {
+.lotusui30 .lotusWidget2 h2 a,
+#gettingStartedTitle,
+.lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1 a, .dijitTitlePaneTitle .dijitTitlePaneTextNode,
+.lotusui .lotusHeading1, .lotusPlaceBar h2, .xsp .lotusForm .lotusContent h2 {
   color: #003465 !important;
   text-decoration: none !important;
   font-family: Roboto, sans-serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   letter-spacing: 0.05em;
   font-size: 20px;
   font-size: 1.25rem;
@@ -26,7 +29,8 @@
 .lotusui30 .lotusContent .lotusWidget2 h2,
 .lotusui30 .lotusContent .dijitTitlePaneTitle,
 .lotusui30 .lotusContent .lotusHeader h1,
-.lotusui30 .lotusContent .gettingStartedHeader > .gettingStartedCheckboxContainer, .xsp .lotusForm .lotusContent h2 {
+.lotusui30 .lotusContent .gettingStartedHeader > div:nth-child(1), .lotusui30 .lotusColRight .lotusSection2 .lotusHeading,
+.lotusui30 .lotusColRight .lotusSection2 .lotusHeading2, .xsp .lotusForm .lotusContent h2 {
   border-bottom: 3px solid #faa61a !important;
   color: #003465 !important;
 }
@@ -162,38 +166,40 @@ body,
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\0000390}}
 .lotusui30 .lotusBanner {
-  background: #faa61a;
-  border-bottom: 4px solid #faa61a !important;
+  background: #003465;
+  border-bottom: 8px solid #faa61a !important;
+  height: 50px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\0000395}}
 .lotusui30 .lotusBanner > .lotusRightCorner {
-  border-bottom: 1px solid #faa61a !important;
   background: #003465 !important;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003465', endColorstr='#003465', GradientType=0) !important;
   color: white !important;
+  padding-top: 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003106}}
 .lconnBannerIcon {
   border: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003112}}
 .lotusui30 .lotusBanner .lconnBannerIcon {
   background: url("../img/sprite16.png");
   background: url("img/sprite16.png");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003118}}
 .lotusui30 .lotusBanner ul.lotusLinks li.lotusSelected a,
 .lotusui30 .lotusBanner ul.lotusInlinelist #headerSharebox {
   background: none;
   filter: none;
   border-color: black;
   box-shadow: 2px 0 2px -2px #fff inset, -2px 0 2px -2px #fff inset;
+  padding-bottom: 22px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003132}}
 .lotusui30 .lotusBanner ul.lotusInlinelist li a:hover,
 .lotusui30 .lotusBanner ul.lotusInlinelist li a:focus,
 .lotusui30 .lotusBanner ul.lotusInlinelist li a:active,
@@ -201,7 +207,7 @@ body,
   background: #00417f !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003137}}
 .lotusui30 .lotusBanner ul.lotusLinks li a {
   color: white !important;
   font-size: 14px;
@@ -210,7 +216,7 @@ body,
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003148}}
 .lotusui30 .lotusBanner ul.lotusLinks li a:hover,
 .lotusui30 .lotusBanner ul.lotusLinks li a:focus,
 .lotusui30 .lotusBanner ul.lotusLinks li a:active,
@@ -218,33 +224,44 @@ body,
   color: #faa61a;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003152}}
 .lotusui30 div.lotusBanner ul.lotusUtility li a {
   color: white !important;
   text-decoration: none !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003157}}
+.lotusMeta a {
+  color: #003465 !important;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003160}}
+.lotusMeta a:hover {
+  color: #003465 !important;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003168}}
 #usernameText {
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003176}}
 input.lotusBtn, button.lotusBtn {
   margin-left: 0 !important;
   margin-right: 10px;
   margin-right: .625rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003189}}
 .lotusui30 .lotusNavMenu {
   border: 1px solid #aaaaaa !important;
   border-radius: 0px;
   box-shadow: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003198}}
 .lotusui30 .lotusNavMenu tr a {
   font-family: Roboto, sans-serif !important;
   font-weight: 400;
@@ -252,7 +269,7 @@ input.lotusBtn, button.lotusBtn {
   color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003215}}
 .lotusTitleBar2 .lotusHeading {
   font-family: Roboto, sans-serif !important;
   font-weight: 300 !important;
@@ -260,34 +277,39 @@ input.lotusBtn, button.lotusBtn {
   font-size: 1.75rem !important;
   color: #003465 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003221}}
 .lotusTitleBar2 .lotusHeading img {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003224}}
 .lotusTitleBar2 .lotusHeading .lotusText, .lotusTitleBar2 .lotusHeading .lotusText a {
   font-weight: 100 !important;
   color: #003465 !important;
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003231}}
 .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:visited, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:hover, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:focus, .lotusui30 .lotusTitleBar2 .lotusHeading .lotusText:active {
   color: #003465 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003235}}
 a.lotusScope {
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003239}}
+.lotusui30 .lotusTitleBar2 .lotusTitleBarContent {
+  margin-right: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003253}}
 .lotusui30 div.lotusTitleBar2 .lotusSearch,
 .lotusui30 div.lotusTitleBar .lotusSearch {
   top: 18px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003271}}
 .lotusui30 .lotusMenu .lotusMenuHeader::before,
 .lotusui30 .lotusMenu .lotusMenuHeader .lotusHeading::before, .lotusui30 .lotusMenu h3::before,
 .lotusui30 .lotusMenu .lotusMenuSection:before {
@@ -302,7 +324,7 @@ a.lotusScope {
   border-bottom: 1px solid #cccccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003287}}
 .xsp .lotusMain .lotusContent:before,
 .lotusui30_layout .lotusMain .lotusContent:before {
   background: none repeat scroll 0 0 #fbfbfb !important;
@@ -315,7 +337,7 @@ a.lotusScope {
   z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003287}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003302}}
 .xsp .lotusColLeft:after,
 .lotusui30_layout .lotusColLeft:after {
   background: none repeat scroll 0 0 #fbfbfb;
@@ -331,7 +353,7 @@ a.lotusScope {
   z-index: -2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003324}}
 .lotusui30 .lotusMenu li.lotusSelected a:visited,
 .lotusui30 .lotusMenu li a:visited {
   color: #404040;
@@ -339,7 +361,7 @@ a.lotusScope {
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003332}}
 .lotusui30 .lotusMenu h3,
 .lotusui30 .lotusColLeft .lotusSection h2 {
   font-family: Roboto, sans-serif !important;
@@ -347,7 +369,7 @@ a.lotusScope {
   text-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003342}}
 .lotusui30 .lotusMenu h3,
 .lotusui30 .lotusColLeft .lotusSection h2,
 .lotusui30 .lotusMenu li a,
@@ -358,7 +380,7 @@ a.lotusScope {
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003352}}
 .lotusui30 .lotusMenu li.lotusSelected a,
 .lotusui30 .lotusMenu li a:hover, .lotusui30 .lotusMenu li a:focus, .lotusui30 .lotusMenu li a:active,
 .lotusui30 .lotusMenu li.lotusSelected a:hover, .lotusui30 .lotusMenu li.lotusSelected a:focus, .lotusui30 .lotusMenu li.lotusSelected a:active {
@@ -371,14 +393,14 @@ a.lotusScope {
   border-right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003365}}
 #dogearPeopleArea h3 a,
 #dogearPeopleArea h3 a:visited {
   text-shadow: none !important;
   color: #777777 !important;
   text-decoration: underline !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003369}}
 #dogearPeopleArea h3 a:hover, #dogearPeopleArea h3 a:focus,
 #dogearPeopleArea h3 a:visited:hover,
 #dogearPeopleArea h3 a:visited:focus {
@@ -386,52 +408,52 @@ a.lotusScope {
   color: #faa61a !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003379}}
 .lotusui30 .lotusMenu .lconnHomepageGettingStarted.lotusSelected a .lconnStreamIcon {
   background-position: 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003385}}
 .lotusui30 .lotusMenu .lconnHomepageImFollowing.lotusSelected a .lconnStreamIcon {
   background-position: -48px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003391}}
 .lotusui30 .lotusMenu .lconnHomepageStatusUpdates.lotusSelected a .lconnStreamIcon {
   background-position: -96px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003397}}
 .lotusui30 .lotusMenu .lconnHomepageMyNotifications.lotusSelected a .lconnStreamIcon {
   background-position: -240px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003403}}
 .lotusui30 .lotusMenu .lconnHomepageAtMentions.lotusSelected a .lconnStreamIcon {
   background-position: -144px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003409}}
 .lotusui30 .lotusMenu .lconnHomepageActionRequired.lotusSelected a .lconnStreamIcon {
   background-position: -192px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003400}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003415}}
 .lotusui30 .lotusMenu .lconnHomepageSaved.lotusSelected a .lconnStreamIcon {
   background-position: -288px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003420}}
 .lotusui30 .lotusMenu .lconnHomepageDiscover.lotusSelected a .lconnStreamIcon {
   background-position: -336px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003411}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003426}}
 .lotusui30 .lotusMenu .lconnHomepageMyPage.lotusSelected a .lconnStreamIcon {
   background-position: -384px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003426}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003441}}
 .lotusui30 .lotusMenu .lotusHeading a,
 .lotusui30 .lotusMenu .lotusHeading a:visited,
 .lotusui30 .lotusMenu .lotusHeading a:hover,
@@ -445,7 +467,7 @@ a.lotusScope {
   text-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003433}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003448}}
 .lotusui30 .lotusMenu h3 a:visited,
 .lotusui30 .lotusMenu h3 a:hover,
 .lotusui30 .lotusMenu h3 a:focus,
@@ -453,18 +475,18 @@ a.lotusScope {
   color: #faa61a !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003437}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003452}}
 .lotusui30 .lotusMenu h3.lotusSelected {
   background: none !important;
   border: none !important;
   box-shadow: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003441}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003456}}
 .lotusui30 .lotusMenu h3.lotusSelected a {
   color: #faa61a !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003474}}
 .lotusui30 .lotusSectionBody[dojoattachpoint="tagCloudContent"],
 .lotusui30 #socialTagsSubArea,
 .lotusui30 #lconnTagCloudContent,
@@ -479,7 +501,7 @@ a.lotusScope {
   color: #777777;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003470}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003485}}
 .lotusui30 .lotusColLeft .lotusSection h2,
 .myProfile .lotusChunk h2 {
   padding-top: 10px;
@@ -487,16 +509,33 @@ a.lotusScope {
   border-top: 1px solid #cccccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003493}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003510}}
 .lotusui30 .lotusSection2 .lotusHeading a:hover,
 .lotusui30 .lotusSection h2 a:hover,
 .lotusui30 .lotusWidget h2 a:hover,
-.lotusui30 .lotusWidget2 h2 a:hover {
+.lotusui30 .lotusWidget2 h2 a:hover,
+#gettingStartedTitle:hover,
+.lotusui30 .lotusHeader .lotusHeading:hover, .lotusui30 .lotusHeader h1 a:hover {
   text-decoration: underline;
   outline: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003517}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003538}}
+.lotusui30 .lotusContent .dijitTitlePaneTitle.dijitClosed {
+  border-bottom: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003542}}
+.gettingStartedHeader > div:nth-child(1) {
+  padding-bottom: 9px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003546}}
+.gettingStartedCheckboxContainer {
+  margin-top: 16px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003553}}
 .lotusui30 .lotusMain .lotusBoard .lotusHeader a.asHeaderLink,
 .lotusui30 .lotusHeader h1 {
   color: #003465;
@@ -504,29 +543,29 @@ a.lotusScope {
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003524}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003560}}
 .lotusui30 .lotusHeader h1 {
   margin-bottom: 8px;
   margin-bottom: .5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003527}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003563}}
 .lotusui30 .lotusHeader h1 a {
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003532}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003568}}
 #activityStreamHeader {
   margin-top: -3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003538}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003574}}
 .lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1,
 .gettingStartedHeader > .gettingStartedCheckboxContainer {
   padding-bottom: 12px;
   padding-bottom: .75rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003546}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003582}}
 .lotusui30 .lotusPortlet,
 .lotusui30 .lotusContent .lotusWidget,
 .lotusui30_layout .lotusMain .lotusContent {
@@ -537,7 +576,7 @@ a.lotusScope {
   border-radius: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003593}}
 .lotusui30 .lotusWidget h3,
 .lotusui .lconnEmpty,
 .dijitReset,
@@ -548,55 +587,55 @@ a.lotusScope {
   color: #5e5e5e;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003561}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003597}}
 .lotusui30 .lotusTitleBarExt .lotusInlinelist li a, .lotusui30 .lotusTitleBarExt .lotusInlinelist li a:hover, .lotusui30 .lotusTitleBarExt .lotusInlinelist li a:focus, .lotusui30 .lotusTitleBarExt .lotusInlinelist li a:active {
   color: #003465;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003567}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003603}}
 .lotusWidget .entry .icons {
   display: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003607}}
 .entryBodySmall {
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003577}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003613}}
 #lconn_homepage_widgets_activities_ActivitiesCalendar_0 table {
   width: 250px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003581}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003617}}
 .lotusWidget .day {
   color: #003465;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003585}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003621}}
 .activityInfo {
   margin-left: 24px;
   margin-left: 1.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003588}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003624}}
 .activityInfo h4 {
   margin-bottom: 20px !important;
   margin-bottom: 1.25rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003598}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003634}}
 .lotusui30dojo .dijitMenuActive .dijitMenuItemHover, .lotusui30dojo .dijitMenuActive .dijitMenuItemSelected,
 .lotusui30 .lotusNavMenu tr a:hover, .lotusui30 .lotusNavMenu tr a:focus, .lotusui30 .lotusNavMenu tr a:active, .lotusui30 .lotusNavMenu tr a.lotusHover {
   text-decoration: none !important;
   background-color: #dddddd !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003606}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003642}}
 .lotusui30 a.lotusVCardHover, .lotusui30 a.lotusVCardHover:visited {
   background: #003465;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003619}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003655}}
 .lotusui30 .lotusSection h2,
 .lotusui30 .lotusWidget h2,
 .lotusui30 .lotusWidget2 h2,
@@ -606,7 +645,7 @@ a.lotusScope {
   color: #003465 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003628}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003664}}
 .lotusColRight .lotusSection,
 .lotusColRight .lotusSection2,
 .lotusColRight .lotusSection2.homepage-widget,
@@ -620,12 +659,12 @@ a.lotusScope {
   padding: 10px 10px 24px 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003635}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003671}}
 .lotusColRight .lotusWidget2 h2 {
   border-bottom: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003644}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003680}}
 .lotusui30 .lotusColLeft .lotusSection2 .lotusHeading,
 .lotusui30 .lotusColLeft .lotusSection h2,
 .lotusui30 .lotusColLeft .lotusSection h2 span.lotusLeft,
@@ -635,7 +674,7 @@ a.lotusScope {
   text-shadow: none;
   color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003647}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003683}}
 .lotusui30 .lotusColLeft .lotusSection2 .lotusHeading:hover, .lotusui30 .lotusColLeft .lotusSection2 .lotusHeading:focus,
 .lotusui30 .lotusColLeft .lotusSection h2:hover,
 .lotusui30 .lotusColLeft .lotusSection h2:focus,
@@ -650,7 +689,7 @@ a.lotusScope {
   color: #faa61a;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003654}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003690}}
 .lotusui30 .lotusMessage2 {
   margin-top: 8px;
   margin-top: .5rem;
@@ -661,12 +700,18 @@ a.lotusScope {
   font-size: 0.9em;
   padding: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003664}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003700}}
 .lotusui30 .lotusMessage2 img {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003673}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003705}}
+.lotusui30 .lotusSection2 {
+  margin-top: 8px !important;
+  margin-top: .5rem !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003714}}
 .lotusui30 .lotusIconLike,
 .lotusui30 .lotusIconMsgSuccess,
 .lotusui30 .lotusIconMsgError,
@@ -675,28 +720,28 @@ a.lotusScope {
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003677}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003718}}
 .lotusui30 .lotusMessage2 .lotusMessageBody {
   margin-left: 0 !important;
   color: #c90211;
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003693}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003734}}
 .lotusui30 .lotusWelcomeBox {
   background: #00417f;
   border-bottom: #001a32;
   box-shadow: 0 1px 2px #004e98 inset, 0 2px 2px #b2b2b2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003701}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003742}}
 .lotusui30 .lotusWelcomeBox .lotusHeading, .lotusui30_layout .lotusWelcomeBox h2 {
   background: #003465 !important;
   border-bottom: #001a32;
   box-shadow: 0 1px 0 #004e98, 0 1px 2px #0069cb inset;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003725}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003766}}
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab,
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab:visited,
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab:hover,
@@ -713,12 +758,12 @@ a.lotusScope {
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003733}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003780}}
 .lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003741}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003788}}
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab,
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab:hover,
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab:focus,
@@ -737,7 +782,7 @@ a.lotusScope {
   padding-bottom: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003762}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003809}}
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab,
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusHover,
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab:hover,
@@ -753,18 +798,18 @@ a.lotusScope {
   padding-bottom: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003773}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003820}}
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab {
   margin-left: 3px;
   background: #f6f6f6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003778}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003825}}
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li:first-child a.lotusTab {
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003785}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003832}}
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusHover,
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab:hover,
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab:focus,
@@ -772,30 +817,37 @@ a.lotusScope {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003789}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003836}}
 .lotusui30 .lotusTabs a {
   text-decoration: none !important;
+  text-shadow: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003798}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003842}}
+.lotusui30 .lotusMenu a,
+.lotusui30 .lotusMenu .lotusMenuSubsection li a {
+  text-shadow: none !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003851}}
 .lotusPlaceBar h2 {
   color: #003465 !important;
-  font-weight: 100 !important;
-  font-size: 28px;
-  font-style: 1.75rem;
+  font-weight: 300 !important;
+  font-size: 24px;
+  font-style: 1.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003808}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003861}}
 body.xsp {
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003813}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003866}}
 .lotusPlaceBar {
   background: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003826}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003879}}
 .xsp .lotusForm .lotusContent h2 {
   padding-bottom: 12px;
   padding-bottom: .75rem;
@@ -803,12 +855,12 @@ body.xsp {
   margin-bottom: .5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003838}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003891}}
 .lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton {
   text-shadow: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003849}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003902}}
 .lotusBtn a, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton,
 .lotusui30 span.lotusBtn a,
 .lotusui30 span.lotusBtn a:visited,
@@ -822,7 +874,23 @@ body.xsp {
   border-radius: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003857}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003906}}
+button.lotusBtn {
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  -ms-border-radius: 6px !important;
+  -o-border-radius: 6px !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  color: white !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003916}}
+.lotusBtn a {
+  color: white !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003924}}
 .lotusui30 span.lotusBtn a,
 .lotusui30 span.lotusBtn a:visited,
 .lotusui30 span.lotusBtn a:hover,
@@ -831,12 +899,12 @@ body.xsp {
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003861}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003928}}
 .lotusui30 .lotusActionBar {
   height: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003870}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003937}}
 .lotusui30 span.lotusBtn a,
 .lotusui30 span.lotusBtn a:visited,
 .lotusui30 span.lotusBtn a:hover,
@@ -845,48 +913,48 @@ body.xsp {
   box-shadow: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003875}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003942}}
 .xsp .lotusForm .lotusContent table {
   margin-bottom: 12px;
   margin-bottom: .75rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003878}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003945}}
 .xsp .lotusForm .lotusContent table td input, .xsp .lotusForm .lotusContent table td select {
   margin-top: 6px;
   margin-top: .375rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003884}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003951}}
 .xsp table td > a {
   color: #003465 !important;
   text-decoration: underline !important;
   font-weight: 400 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003888}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003955}}
 .xsp table td > a:hover {
   text-decoration: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003897}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003964}}
 body.xsp div,
 table div,
 .xspTextLabel {
   color: #777777 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003906}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003973}}
 .xsp .lotusForm {
   background: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003909}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003976}}
 .xsp .lotusContent {
   border: 0;
   box-shadow: none;
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003930}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003997}}
 .lotusMenu h3,
 .portlet-menu h3,
 .lotusMenu ul li a,
@@ -894,23 +962,23 @@ table div,
   font-family: Roboto, sans-serif !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003935}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031002}}
 .lotusMenuHeader > ul > li > h3 > a {
   color: #faa61a !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003942}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031009}}
 .lotusMenu ul li > a,
 .portlet-menu ul li > a {
   color: #777777 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003946}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031013}}
 .lotusMenuSubsection ul li > h3 > a {
   color: #333333 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003953}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031020}}
 .lotusMenu li.lotusSelected a,
 .portlet-menu li.lotusSelected a,
 .lotusMenu h3.lotusSelected,
@@ -921,39 +989,39 @@ table div,
   color: #777777 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003966}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031033}}
 table.searchCriteria {
   width: 100%;
   margin-bottom: 17px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003969}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031036}}
 table.searchCriteria td.basicCriteria {
   width: 75%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003971}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031038}}
 table.searchCriteria td.basicCriteria > input {
   width: 95% !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003974}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031041}}
 table.searchCriteria td.basicCriteria label.xspCheckBox input {
   width: 20px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003978}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031045}}
 table.searchCriteria td.advancedCriteria {
   width: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003983}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031050}}
 table.searchCriteria td select {
   color: #777777 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003988}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031055}}
 td.basicCriteria label {
   color: #777777 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003994}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031061}}
 td.advancedCriteria a {
   display: block;
   border-bottom: 1px solid #cccccc;
@@ -968,30 +1036,34 @@ td.advancedCriteria a {
   background-repeat: no-repeat;
   background-size: 5px 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031008}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031075}}
 td.advancedCriteria a.last {
   border-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031016}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031083}}
 table.xspDataTable {
-  margin-top: 16px !important;
-  margin-top: 1rem !important;
+  margin-top: 0;
   margin-bottom: 12px !important;
   margin-bottom: .75rem !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031023}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031091}}
 table.xspDataTable td.notesViewBold input {
   float: left;
   margin-top: 2px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031027}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031095}}
 table.xspDataTable td.notesViewBold a {
   text-align: left;
   margin-left: -6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031106}}
+.xspComboBox {
+  height: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031114}}
 table.xspDataTable > thead > tr {
   height: 28px;
   border-color: #cccccc !important;
@@ -1004,37 +1076,66 @@ table.xspDataTable > thead > tr {
   background-image: -o-linear-gradient(#fefefe, #f3f3f3);
   background-image: linear-gradient(#fefefe, #f3f3f3);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031045}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031122}}
 table.xspDataTable > thead > tr th div span {
-  color: #333333;
+  color: #777777;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031054}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031130}}
 .xspDataTable tbody tr td {
   border-color: #cccccc !important;
   height: 36px !important;
   height: 2.25rem !important;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031059}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031135}}
 .xspDataTable tbody tr td span {
   color: #777777 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031069}}
-input.xspInputFieldEditBox {
-  height: 24px;
-  height: 1.5rem;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031147}}
+input.xspInputFieldEditBox,
+.tundra .dijitInputField input {
+  height: 24px !important;
+  height: 1.5rem !important;
+  margin-right: 8px !important;
+  margin-right: .5rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031075}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031154}}
+.company-filter {
+  margin-top: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031156}}
+.company-filter div.dijitReset {
+  height: 26px;
+  height: 1.625rem !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031163}}
+.company-filter div.dijitReset input {
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  height: 26px !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031169}}
+.company-filter button.lotusBtn {
+  margin-left: 8px !important;
+  margin-left: .5rem !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031175}}
+.xspInputFieldEditBox {
+  margin-top: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031182}}
 table button {
   margin-left: 8px;
   margin-left: .75rem;
   box-shadow: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031090}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031197}}
 .xspDataTableViewPanelHeaderStart,
 .xspDataTableViewPanelHeaderMiddle,
 .xspDataTableViewPanelHeaderEnd {
@@ -1044,9 +1145,10 @@ table button {
   background-image: -moz-linear-gradient(#fefefe, #f3f3f3);
   background-image: -o-linear-gradient(#fefefe, #f3f3f3);
   background-image: linear-gradient(#fefefe, #f3f3f3);
+  display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031210}}
 table.xspDataTableViewPanel tr > td.xspDataTableViewPanelHeaderMiddle > table,
 table.xspDataTableViewPanel tr > td.xspDataTableViewPanelFooterMiddle > table {
   margin-top: 0px;
@@ -1054,7 +1156,49 @@ table.xspDataTableViewPanel tr > td.xspDataTableViewPanelFooterMiddle > table {
   margin-bottom: .25rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031227}}
+h2.business-development-header {
+  margin-top: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 5px !important;
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031236}}
+.business-development td span ul.lotusInlinelist {
+  margin-bottom: 10px !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031242}}
+.business-development table.xspDataTableViewPanel {
+  width: 98%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031245}}
+.business-development table.xspDataTable {
+  margin-left: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031252}}
+table.xspDataTableViewPanel {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031256}}
+h4 > span {
+  color: #003465;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031263}}
+.dijitTitlePaneContentOuter .dijitReset {
+  margin-right: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031267}}
+.lotusui30 .lotusTwistyClosed {
+  margin-top: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\000031276}}
 .lotusui30 .lotusFooter ul {
   background: white;
 }
