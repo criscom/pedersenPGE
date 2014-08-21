@@ -90,7 +90,7 @@ body,
 .lotusui30 .lotusBanner {
 	background: $blue;
 	// border-bottom: 3px solid $yellow !important;
-	border-bottom: 8px solid $yellow !important;
+	border-bottom: 6px solid $yellow !important;
 	height: 50px;
 	>.lotusRightCorner {
 		// border-bottom: 1px solid $yellow !important;
@@ -218,6 +218,7 @@ input.lotusBtn, button.lotusBtn {
 	font-size: 28px !important;
 	font-size: 1.75rem !important;
 	color: $blue !important;
+	margin-top: 6px;
 	img {
 		display: none;
 	}
@@ -283,7 +284,7 @@ a.lotusScope {
 }
 
 // Sidebar background
-.xsp .lotusMain .lotusContent:before,
+.lotusMain .lotusContent:before, // .xsp
 .lotusui30_layout .lotusMain .lotusContent:before {
 	  // background: none repeat scroll 0 0 #f0f0f0;
 	  background: none repeat scroll 0 0 $sidebargray !important; // $sidebargray
@@ -298,7 +299,7 @@ a.lotusScope {
     z-index: -1;
 }
 
-.xsp .lotusColLeft:after,
+ .lotusColLeft:after, // .xsp 
 .lotusui30_layout .lotusColLeft:after {
     // background: none repeat scroll 0 0 #282a2d;
     background: none repeat scroll 0 0 $sidebargray;
@@ -532,7 +533,7 @@ background-position: -384px 0; //-416px 0;
 
 .lotusui30 .lotusColRight .lotusSection2 .lotusHeading, 
 .lotusui30 .lotusColRight .lotusSection2 .lotusHeading2 {
-	@extend %headingborder;
+	border-bottom: 1px solid $blue !important;
 }
 
 .lotusui30 .lotusContent .dijitTitlePaneTitle.dijitClosed {
@@ -798,7 +799,7 @@ background-position: -384px 0; //-416px 0;
 		-moz-border-radius-topright: 3px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
-  	padding-bottom: 8px;
+  	padding-bottom: 9px;
   }
 
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab,
@@ -851,8 +852,8 @@ background-position: -384px 0; //-416px 0;
 .lotusPlaceBar h2 {
 	color: $blue !important;
 	font-weight: 300 !important;
-	font-size: 24px;
-	font-style: 1.5rem;
+	font-size: 16px;
+	padding-left: 2px;
 }
 
 //===========================================================
@@ -862,9 +863,15 @@ body.xsp {
 	background-color: white;
 }
 
+@media only screen and (min-width: 1250px) {
+  .lotusui30_body .lotusMain {
+    padding: 0 !important;
+  }
+}
 
 .lotusPlaceBar {
 	background: white !important;
+	border-style: none;
 }
 
 .lotusPlaceBar h2 {
@@ -872,7 +879,15 @@ body.xsp {
 }
 
 
+.lotusui30 .lotusTitleBar2 .lotusNavTabs {
+	border-bottom: 1px solid #dfdfdf;
+	height: 38px;
+	margin-left: 247px;
+}
 
+.lotusui30 .lotusTitleBar2 {
+	border-bottom: 0;
+}
 
 // Heading Content
 
