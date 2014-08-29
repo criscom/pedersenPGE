@@ -10,6 +10,10 @@ body,
 	color: $gray;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .lotusui30_body {
 	background: white;
 }
@@ -18,7 +22,11 @@ body,
 	color: white;
 }
 
+// lotus notes a:focus
 
+.tundra a:focus {
+	outline: 0 !important;
+}
 
 
 // fonts and colors
@@ -36,6 +44,11 @@ body,
 // ===========================================================
 // Pedersen Logo section
 
+// login form
+
+.lotusBanner.login {
+	padding-bottom: 20px !important;
+}
 
 .pedersenBanner {
 	height: 70px;
@@ -109,6 +122,10 @@ body,
 
 // house icon
 
+#lotusBannerHomepage:after { // remove border at the right side of house
+	width: 0;
+}
+
 .lotusui30 .lotusBanner .lconnBannerIcon {
 	background: url('../img/sprite16.png'); // for local development
 	background: url('img/sprite16.png');
@@ -126,6 +143,11 @@ body,
 	padding-bottom: 22px;
 }
 
+.lotusui30 .lotusBanner ul.lotusInlinelist #headerSharebox {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
 .lotusui30 .lotusBanner ul.lotusInlinelist li a:hover, 
 .lotusui30 .lotusBanner ul.lotusInlinelist li a:focus, 
 .lotusui30 .lotusBanner ul.lotusInlinelist li a:active, 
@@ -133,6 +155,15 @@ body,
 	background: lighten($blue, 5%) !important;
 }
 
+.lotusui30 .lotusInlinelist {
+	// margin-top: -3px; // correct for connections
+	margin-top: -5px; // correct for PGE
+}
+
+.lotusui30 .lotusBanner ul.lotusUtility li {
+    // top: 5px; // correct for connections
+    top: 3px; // correct for PGE
+}
 
 .lotusui30 .lotusBanner ul.lotusLinks li a {
 	color: white !important;
@@ -140,6 +171,7 @@ body,
 	font-size: .875rem;
 	font-family: $roboto !important;
 	text-decoration: none !important;
+	padding-top: 16px !important;
 }
 
 .lotusui30 .lotusBanner ul.lotusLinks li a:hover, 
@@ -152,6 +184,7 @@ body,
 .lotusui30 div.lotusBanner ul.lotusUtility li a {
 	color: white !important;
 	text-decoration: none !important;
+	padding-top: 18px;
 }
 
 .lotusMeta a {
@@ -161,6 +194,11 @@ body,
 		color: $blue !important;
 		text-decoration: none;
 	}
+}
+
+// moving the right section of the navigation to right align with the logo above
+#headerMenuContainer {
+	margin-right: -22px;
 }
 
 // Username next to share button
@@ -178,6 +216,8 @@ input.lotusBtn, button.lotusBtn {
 	margin-right: 10px;
 	margin-right: .625rem;
 }
+
+
 
 .lotusui30 .lotusBanner ul.lotusInlinelist li a.lotusBannerBtn // Share button
 {
@@ -573,8 +613,8 @@ background-position: -384px 0; //-416px 0;
 .lotusui30 .lotusHeader .lotusHeading, .lotusui30 .lotusHeader h1,
  .gettingStartedHeader > .gettingStartedCheckboxContainer
  {
-	padding-bottom: 12px;
-	padding-bottom: .75rem;
+	padding-bottom: 8px;
+	padding-bottom: .5rem;
 }
 
 .lotusui30 .lotusPortlet, 
@@ -688,7 +728,8 @@ background-position: -384px 0; //-416px 0;
 
 // alert warning fehlermeldung
 
-.lotusui30 .lotusMessage2 {
+.lotusui30 .lotusMessage2,
+.missingData-widget {
 	margin-top: 8px;
 	margin-top: .5rem;
 	// background-color: #ffebe6;
@@ -712,8 +753,13 @@ background-position: -384px 0; //-416px 0;
 .lotusui30 .lotusIconMsgSuccess, 
 .lotusui30 .lotusIconMsgError, 
 .lotusui30 .lotusIconMsgInfo, 
-.lotusui30 .lotusIconMsgWarning {
+.lotusui30 .lotusIconMsgWarning,
+.missingInfoBox {
 	background: none;
+}
+
+.missingInfoBox {
+	border: none;
 }
 
 .lotusui30 .lotusMessage2 .lotusMessageBody {
@@ -755,6 +801,50 @@ background-position: -384px 0; //-416px 0;
 
 //===========================================================
 // tabs 
+
+.tundra .lotusTabContainer { // lotusnotes
+	height: 4.5em;
+	border-bottom: 1px solid rgb(223,223,223);
+}
+
+.lotusui30, // ibm
+.tundra // lotusnotes
+	{
+	.lotusTitleBar2 .lotusNavTabs li.lotusSelected,
+	ul.lotusTabs li.lotusSelected {
+		padding-bottom: 0px;
+	}
+	ul.lotusTabs { // lotusnotes
+		left: 4px;
+		li {
+			border-style: solid;
+			border-color: rgb(223,223,223);
+			// border-bottom-color: white;
+			@include border-radius(3px);
+			a {
+				font-family: $roboto;
+				color: $gray;
+				font-size: 14px;
+				padding: 11px 20px 13px;
+				background-color: rgb(246,246,246);
+				&:hover, &:focus, &:active {
+					background-color: white;
+				}
+			}
+		}
+		li.lotusSelected {
+			border-style: solid;
+			border-color: rgb(223,223,223);
+			border-bottom-color: white;
+			a {
+				color: $gray;
+				font-weight: normal;
+				background-color: white;
+
+			}
+		}
+	}
+}
 
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab, 
 .lotusui_ie .lotusui30 .lotusTitleBar2 .lotusNavTabs li.lotusSelected a.lotusTab:visited, 
@@ -799,7 +889,7 @@ background-position: -384px 0; //-416px 0;
 		-moz-border-radius-topright: 3px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
-  	padding-bottom: 9px;
+  	padding-bottom: 8px;
   }
 
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab,
@@ -815,12 +905,16 @@ background-position: -384px 0; //-416px 0;
 	-moz-border-radius-topright: 3px;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	padding-bottom: 6px;
+	// padding-top: 8px;
+	// padding-bottom: 5px;
 }
 
-.lotusui30 .lotusTitleBar2 .lotusNavTabs li a.lotusTab {
-	margin-left: 3px;
+.lotusui30 .lotusTitleBar2 .lotusNavTabs li {
+	margin-right: 3px; 
+	a.lotusTab {
+	// margin-left: 3px;
 	background: lighten($gray, 50%);
+	}
 }
 
 .lotusui30 .lotusTitleBar2 .lotusNavTabs li:first-child a.lotusTab {
@@ -853,7 +947,13 @@ background-position: -384px 0; //-416px 0;
 	color: $blue !important;
 	font-weight: 300 !important;
 	font-size: 16px;
-	padding-left: 2px;
+	padding-left: 22px; // PGE CRM Apps fix
+}
+
+@media only screen and (min-width: 1250px) {
+  .lotusPlaceBar h2 {
+    
+  }
 }
 
 //===========================================================
@@ -863,10 +963,9 @@ body.xsp {
 	background-color: white;
 }
 
-@media only screen and (min-width: 1250px) {
-  .lotusui30_body .lotusMain {
-    padding: 0 !important;
-  }
+
+#lotusMain > #crm_iframe {
+    margin-left: -20px; // PGE CRM Apps fix
 }
 
 .lotusPlaceBar {
@@ -881,8 +980,11 @@ body.xsp {
 
 .lotusui30 .lotusTitleBar2 .lotusNavTabs {
 	border-bottom: 1px solid #dfdfdf;
-	height: 38px;
-	margin-left: 247px;
+	height: 37px;
+	// margin-left: 247px;
+	margin-right: 118px;
+	margin-left: 225px;
+	padding-left: 25px;
 }
 
 .lotusui30 .lotusTitleBar2 {
@@ -926,6 +1028,10 @@ button.lotusBtn {
   border-radius: 6px !important;
   font-size: 14px !important;
   color: white !important;
+}
+
+.dataBoxActive td select:nth-child(2) { // move "Set now" button to the right and create some spacing.
+	margin-right: 8px;
 }
 
 .lotusBtn a {
@@ -1006,6 +1112,10 @@ table div,
 	}
 }
 
+.tundra .lotusColLeft .lotusMenu {
+	background-position: 19px 10px !important; // PGE CRM Apps fix
+}
+
 .lotusMenu h3, 
 .portlet-menu h3,
 .lotusMenu ul li a, 
@@ -1025,8 +1135,42 @@ table div,
 	color: $gray !important;
 }
 
+.lotusMenuSubsection ul li>h3 {
+	margin-left: -1px !important;
+}
+
 .lotusMenuSubsection ul li>h3>a {
-	color: $darkgray !important;
+	color: $gray !important;
+	font-weight: 700 !important;
+}
+
+// Space between Map and first menu link
+.tundra .lotusMenuHeader>ul {
+	margin-top: 12px;
+}
+
+// Space between Main Menu links
+.tundra .lotusMenuHeader>ul>li {
+	margin-bottom: 5px;
+}
+
+// Space between Submenu links
+.tundra .lotusMenuSubsection>ul>li {
+	margin-bottom: 4px;
+}
+
+.tundra .lotusMenuSubsection>ul>li>h3 {
+	margin-top: 8px;
+}
+
+.tundra .lotusMenuHeader {
+	ul {
+		li {
+			a, h3 {
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 .lotusMenu li.lotusSelected a, 
@@ -1045,9 +1189,14 @@ table div,
 // Search executives
 ///
 
+table.buttonBar {
+	margin-left: -4px;
+}
+
 table.searchCriteria {
 	width: 100%;
 	margin-bottom: 17px !important;
+	margin-left: -4px !important;
 	td.basicCriteria {
 		width: 75%;
 		>input {
@@ -1055,6 +1204,7 @@ table.searchCriteria {
 		}
 		label.xspCheckBox input {
 			width: 20px !important;
+			margin-left: -4px;
 		}
 	}
 	td.advancedCriteria {
@@ -1120,6 +1270,12 @@ table.xspDataTable {
 
 .xspComboBox {
 	height: 28px;
+}
+
+// Refine query
+
+.refine-query {
+	margin-bottom: 16px;
 }
 
 
@@ -1282,6 +1438,201 @@ h4>span {
 .lotusui30 .lotusTwistyClosed {
 	margin-top: 8px; // positioning the > image before the headings EBD, CDB
 }
+
+
+
+
+//===========================================================
+// Lotus notes
+// Executive profile tabs
+
+// Detail widget ==> containing person's address, telephone etc.
+
+div.crm-apps {
+	margin-top: 32px;
+	margin-top: 2rem;
+	.xspDataTable {
+		margin-left: 0 !important;
+		.xspColumnViewMiddle {
+			padding-left: 0;
+		}
+	}
+	.button-wrapper table td:nth-child(1) {
+		width: 33%;
+	}
+	.headerBtnAction {
+		margin-bottom: 12px !important;
+		margin-bottom: .75rem !important;
+		font-size: 13px !important;
+	}
+// CRM Apps EBD button box
+.button-column-1 button.lotusBtn {
+	margin-right: 0;
+	margin-left: 4px !important;
+	margin-bottom: 4px !important;
+	}
+}
+
+div.crm-apps .xspDataTable tbody tr td {
+	height: 16px !important;
+	height: 1rem !important;
+}
+
+.above-widget {
+		td img {
+		margin-right: 16px;
+		margin-right: 1rem;
+		// height: 6em !important;
+	}
+	.personName {
+		font-size: 20px;
+		font-size: 1.25rem;
+		display: block;
+	}
+	.xspTextComputedField {
+		line-height: 1.4em;
+		font-size: 14px;
+	}
+}
+
+.crm-apps .dataBox {
+	padding: 9px 17px 5px;
+	margin-bottom: 26px;
+	&.history-widget {
+		padding: 6px 17px 5px !important;
+	}
+	div:nth-child(3) {
+		// clear: both; // clearing the xspLink-container
+	}
+	.xspLink-container {
+		float: right;
+		padding-top: 8px;
+		a {
+			text-align: right;
+			margin-top: 0;
+		}
+	}
+	.table-content {
+		clear: both;
+		border-top: 3px solid $yellow !important;
+		margin-top: 33px;
+		padding-top: 12px;
+	}
+	.xspDataTableViewPanelCaption,
+	.db-widget-header,
+	.db-widget-header-title {
+		float: left;
+		@extend %heading;
+		margin-bottom: 1px;
+	}
+
+	.xspDataTableViewPanelCaption {
+		width: 100%;
+		text-align: left;
+		@extend %headingborder;
+		padding-bottom: 6px;
+		padding-bottom: 0.375rem;
+		margin-bottom: 10px;
+		margin-bottom: 0.625rem;
+
+	}
+	input[type="checkbox"] {
+
+	}
+} // end .crm-apps .databox
+
+.xspDataTableViewPanel .xspDataTable {
+	thead {
+	display: none;
+	}
+	tbody tr td {
+		border-color: white !important;
+	}
+} // end databox
+
+
+// address widget
+
+.address-widget>table[role="presentation"] {
+	border-top: 3px solid $yellow;
+	margin-top: 33px;
+	margin-top: 2.0625rem;
+	padding-top: 16px;
+	padding-top: 1rem;
+	>tbody{
+		>tr>td:nth-child(1) {
+		padding-left: 0;
+		}
+	}
+}
+
+// history widget
+
+.history-widget {
+	.db-widget-header-title {
+    margin-left: -4px;
+  }
+  .xspLink-container {
+  	padding-top: 13px !important;
+  }
+  .table-content {
+    margin-top: 1px !important;
+  }
+  table[role="presentation"] {
+  	width: 75% !important;
+  }
+}
+
+// assignment tab 	
+.assignments-widget {
+	table.xspDataTable {
+		// margin-left: -12px !important;
+		td.xspColumnViewStart {
+			display: none;
+		}
+	}
+	}
+
+// attachments tab
+.attachments-widget>table {
+	margin-top: -6px;
+}
+
+// for us tab
+
+	.for-us { 
+		.xspLink-container {
+		padding-top: 0 !important;
+		}
+		.table-content {
+			margin-top: 6px !important;
+		}
+	}
+
+// boxes in the left td
+
+.future-widget,
+.candidate-widget,
+.groups-widget,
+.missingData-widget,
+.management-tools-widget {
+	>table[role="presentation"] {
+		border-top: 3px solid $yellow !important;
+		margin-top: 33px;
+		margin-top: 2.0625rem;
+		padding-top: 18px;
+		padding-top: 1.125rem;
+	}
+}
+
+.candidate-widget {
+	>table[role="presentation"] {
+		padding-top: 15px;
+	}
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
 
 //===========================================================
 // footer
