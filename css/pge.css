@@ -643,11 +643,6 @@ a.lotusScope {
   color: #003465;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003644}}
-.lotusWidget .entry .icons {
-  display: none !important;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pedersenandpartners-PGE\/sass\/_custom\.scss}line{font-family:\00003648}}
 .entryBodySmall {
   margin-left: 0;
