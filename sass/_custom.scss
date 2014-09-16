@@ -1505,7 +1505,8 @@ div.crm-apps .xspDataTable tbody tr td {
 		// clear: both; // clearing the xspLink-container
 	}
 	.xspLink-container {
-		float: right;
+		// float: right;
+		text-align: right;
 		padding-top: 8px;
 		a {
 			text-align: right;
@@ -1515,8 +1516,12 @@ div.crm-apps .xspDataTable tbody tr td {
 	.table-content {
 		clear: both;
 		border-top: 3px solid $yellow !important;
-		margin-top: 33px;
+		// margin-top: 33px;
+		margin-top: 12px;
 		padding-top: 12px;
+	}
+	table.table-content {
+		margin-top: 12px;
 	}
 	.xspDataTableViewPanelCaption,
 	.db-widget-header,
